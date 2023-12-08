@@ -1,4 +1,4 @@
-<h1 class="bg-info">Thêm danh mục</h1><br>
+<h1 class="bg-info">Thêm sản phẩm</h1><br>
 <div class="container-addsp">
     <form action="" method="post" enctype="multipart/form-data">
         <div class="col-md-8 input-group mb-3">
@@ -36,8 +36,9 @@
                 <label class="input-group-text">Thuộc về thương hiệu</label>
             </div>
             <select class="custom-select" required name="id_thuong_hieu" id="inputGroupSelect01">
-                <option value="1">Hiện</option>
-                <option value="0">Ẩn</option>
+                <?php foreach($listth as $rows): ?>
+                <option value="<?= $rows['id_thuong_hieu'] ?>"><?= $rows['ten_thuong_hieu'] ?></option>
+                <?php endforeach ?>
             </select>
         </div>
         <div class="col-md-8 input-group mb-3">

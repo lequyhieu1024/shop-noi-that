@@ -29,3 +29,4 @@ foreach ($listdm as $rows) :
 <?php endforeach ?>
 <br>
 <h2 class="text-danger"><?= $alert ?></h2>
+<a href="index.php?act=listdm"><button>Hủy thay đổi</button></a>

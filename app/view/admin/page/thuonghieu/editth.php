@@ -36,3 +36,4 @@ foreach ($listth as $rows) :
 <?php endforeach ?>
 <br>
 <h2 class="text-danger"><?= $alert ?></h2>
+<a href="index.php?act=listth"><button>Hủy thay đổi</button></a>

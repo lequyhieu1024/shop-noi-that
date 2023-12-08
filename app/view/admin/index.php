@@ -5,8 +5,8 @@ session_start();
         include("../../../config.php");
         // include("../../models/AdminModel/binhluan.php");
         include("../../model/AdminModel/danhmucmodel.php");
-        // include("../../models/AdminModel/khoahoc.php");
-        // include("../../models/AdminModel/lienhe.php");
+        include("../../model/AdminModel/sanphammodel.php");
+        include("../../model/AdminModel/thuonghieumodel.php");
         // include("../../models/AdminModel/giangvien.php");
         // include("../../models/AdminModel/quyen.php");
         // include("../../models/AdminModel/taikhoan.php");
@@ -22,6 +22,7 @@ session_start();
                         include "../../controller/adminController/sanPhamController.php";
                         include "../../controller/adminController/danhMucController.php";
                         include "../../controller/adminController/bienTheController.php";
+                        include "../../controller/adminController/thuongHieuController.php";
                 }else{
                         // include "../../view/admin/layout/home.php";
                 }

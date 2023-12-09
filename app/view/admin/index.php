@@ -7,7 +7,7 @@ session_start();
         include("../../model/AdminModel/danhmucmodel.php");
         include("../../model/AdminModel/sanphammodel.php");
         include("../../model/AdminModel/thuonghieumodel.php");
-        // include("../../models/AdminModel/giangvien.php");
+        include("../../model/AdminModel/websitemodel.php");
         // include("../../models/AdminModel/quyen.php");
         // include("../../models/AdminModel/taikhoan.php");
         // include("../../models/AdminModel/khuyenmai.php");
@@ -23,6 +23,7 @@ session_start();
                         include "../../controller/adminController/danhMucController.php";
                         include "../../controller/adminController/bienTheController.php";
                         include "../../controller/adminController/thuongHieuController.php";
+                        include "../../controller/adminController/websiteController.php";
                 }else{
                         // include "../../view/admin/layout/home.php";
                 }

@@ -456,7 +456,7 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link bg-secondary">
+            <a href="index.php?act=listws" class="nav-link bg-secondary">
               <i class="nav-icon"></i>
               <p>
                 Website

@@ -1,6 +1,8 @@
+<h1 class="bg-info">Cập nhật thông tin website</h1><br>
+
 <?php foreach($listws as $rows):
     extract($rows);?>
-
+<form action="" method="post" enctype="multipart/form-data">
 <table class="table">
   <thead>
     <tr>
@@ -11,7 +13,9 @@
   <tbody>
     <tr>
       <th scope="row">Banner Website</th>
-      <td><img style="width: 400px;height:200px" src="../../../public/image/<?=$banner_website?>" alt=""></td>
+      <td><input type="file" name="banner_website" id="">
+      <img style="width: 100px;height:50px" src="../../../public/image/<?=$banner_website?>" alt=""></td>
+      
     </tr>
     <tr>
       <th scope="row">Email website</th>
@@ -22,22 +26,31 @@
       <td><input type="number" value="<?=$phone_website?>" name="phone_website"></td>
     </tr>
     <tr>
+      <th scope="row">Địa chỉ Website</th>
+      <td><input type="text" value="<?=$dia_chi_website?>" name="dia_chi_website"></td>
+    </tr>
+    <tr>
       <th scope="row">Logo Website</th>
-      <td><img style="width: 400px;height:200px" src="../../../public/image/<?=$logo_website?>" alt=""></td>
+      <td><input type="file" name="logo_website" id="">
+      <img style="width: 100px;height:50px" src="../../../public/image/<?=$logo_website?>" alt=""></td>
+      
     </tr>
     <tr>
       <th scope="row">Title Website</th>
-      <td><?=$title_website?></td>
+      <td><input type="text" name="title_website" value="<?=$title_website?>" id=""></td>
     </tr>
     <tr>
       <th scope="row">Favico Website</th>
-      <td><img style="width: 400px;height:200px" src="../../../public/image/<?=$favicon_website?>" alt=""></td>
+      <td><input type="file" name="favicon_website">
+      <img style="width: 100px;height:50px" src="../../../public/image/<?=$favicon_website?>" alt=""></td>
+      
     </tr>
-    <tr>
       <th scope="row">Rate Website</th>
-      <td><?=$rate?></td>
+      <td><input type="number" name="rate" value="<?=$rate?>"></td>
     </tr>
   </tbody>
 </table>
+<input class="btn btn-success" type="submit" value="Cập nhật" name="editws">
+</form>
 
 <?php endforeach ?>

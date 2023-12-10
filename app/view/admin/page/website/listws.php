@@ -1,3 +1,5 @@
+<h1 class="bg-info">Thông tin website</h1><br>
+
 <?php foreach($listws as $rows):
     extract($rows);?>
 
@@ -6,6 +8,7 @@
     <tr>
       <th scope="col">Tên Website</th>
       <th scope="col"><?=$ten_website?></th>
+      <th><a href="index.php?act=editws"><button class="btn btn-warning">Cập nhật thông tin website</button></a></th>
     </tr>
   </thead>
   <tbody>
@@ -20,6 +23,10 @@
     <tr>
       <th scope="row">Phone Website</th>
       <td><?=$phone_website?></td>
+    </tr>
+    <tr>
+      <th scope="row">Địa chỉ</th>
+      <td><?=$dia_chi_website?></td>
     </tr>
     <tr>
       <th scope="row">Logo Website</th>
@@ -39,5 +46,4 @@
     </tr>
   </tbody>
 </table>
-<a href="index.php?act=editws">Cập nhật thông tin website</a>
 <?php endforeach ?>

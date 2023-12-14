@@ -1,10 +1,10 @@
 </div>
 </div>
 <footer class="main-footer">
-    <strong>Copyright &copy; dự án một <a href="https://adminlte.io">Nhóm 7</a>.</strong>
-    LequyhieuHoangcaohuanNguyensyanhtuan
+    <strong>Copyright &copy; LeQuyHieu <a href="https://adminlte.io">PHP</a>.</strong>
+    lequyhieu1024@gmail.com
     <div class="float-right d-none d-sm-inline-block">
-      <b>FPOLY</b> FAL23
+      <b>Shop Nội thất</b> by LeHieu
     </div>
   </footer>
 

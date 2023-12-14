@@ -1,4 +1,3 @@
-<a href="../.../../../../index.php"><h1>Quay lại trang người dùng</h1></a>
 
 <div class="row">
           <div class="col-lg-3 col-6">
@@ -7,7 +6,7 @@
               <div class="inner">
                 
                 <?php 
-                    $so_luong = dem_khoa_hoc();  
+                    // $so_luong = dem_khoa_hoc();  
                 ?>
                 <h3><?=$so_luong  ?> <sup style="font-size: 20px"></sup></h3>
                 <p>Số Lượng Khóa Học</p>
@@ -24,7 +23,7 @@
             <div class="small-box bg-success">
               <div class="inner">
                 <?php 
-                   $so_luong = dem_tai_khoan();
+                  //  $so_luong = dem_tai_khoan();
                 ?>
                 <h3><?=$so_luong ?></h3>
                 <p>Số Lượng Tài Khoản Đăng Ký</p>
@@ -41,7 +40,7 @@
             <div class="small-box bg-warning">
               <div class="inner">
               <?php 
-                   $tongtien = tinhTongThu();
+                  //  $tongtien = tinhTongThu();
                 ?>
                 <h3>$ <?=$tongtien?></h3>
 
@@ -65,7 +64,7 @@
             <td>Khóa học giá max</td>
           </tr>
           <?php 
-          $thongke = thongke_khoahoc();
+          // $thongke = thongke_khoahoc();
           foreach($thongke as $row):
           extract($row);
           ?>
@@ -94,7 +93,7 @@
             var data = google.visualization.arrayToDataTable([
             ['Danh mục', 'Số lượng khóa học'],
             <?php
-              $result = thong_ke();
+              // $result = thong_ke();
               foreach ($result as $row) {
                 echo "['".$row['ten_danh_muc']."', ".$row['so_luong_kh']."]," ;}?> 
           ]);
@@ -114,7 +113,8 @@
     <script>
         // Bắt đầu script vẽ biểu đồ
         // Gọi hàm thongke_khoahoc để lấy dữ liệu
-        var data = <?php echo json_encode(thongke_khoahoc()); ?>;
+        var data = <?php 
+        // echo json_encode(thongke_khoahoc()); ?>;
 
         // Tạo mảng chứa tên danh mục, số lượng khóa học, tổng tiền, giá rẻ nhất và giá đắt nhất
         var labels = data.map(function(item) {
@@ -213,7 +213,7 @@
     </thead>
     <tbody>
         <?php
-        $khoahoc = QLkhdadangkyTop3();
+        // $khoahoc = QLkhdadangkyTop3();
         foreach($khoahoc as $row):
         extract($row); ?>
         <tr>

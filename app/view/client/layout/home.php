@@ -1,283 +1,9 @@
 
-<div class="header-small-mobile section-padding-1">
-            <div class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="col-6">
-                        <div class="mobile-logo logo-width">
-                            <a href="index.html">
-                                <img alt="" src="public/assets/images/logo/logo.png">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="mobile-header-right-wrap">
-                            <div class="header-right-wrap header-right-flex">
-                                <div class="same-style cart-wrap">
-                                    <a href="#" class="cart-active">
-                                        <i class="dlicon shopping_bag-20"></i>
-                                        <span class="count-style">02</span>
-                                    </a>
-                                </div>
-                                <div class="same-style header-off-canvas">
-                                    <a class="header-aside-button" href="#">
-                                        <i class="dlicon ui-3_menu-left"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- search start -->
-        <div class="search-content-wrap main-search-active">
-            <a class="search-close"><i class="dlicon ui-1_simple-remove"></i></a>
-            <div class="search-content">
-                <p>Start typing and press Enter to search</p>
-                <form class="search-form" action="#">
-                    <input type="text" placeholder="Search">
-                    <button class="button-search"><i class="dlicon ui-1_zoom"></i></button>
-                </form>
-            </div>
-        </div>
-        <!-- mini cart start -->
-        <div class="sidebar-cart-active">
-            <div class="sidebar-cart-all">
-                <a class="cart-close" href="#"><i class="dlicon ui-1_simple-remove"></i></a>
-                <div class="cart-content">
-                    <h3>Shopping Cart</h3>
-                    <ul>
-                        <li class="single-product-cart">
-                            <div class="cart-img">
-                                <a href="#"><img src="public/assets/images/cart/cart-1.jpg" alt=""></a>
-                            </div>
-                            <div class="cart-title">
-                                <h4><a href="#">Bejewelled velvet sandals</a></h4>
-                                <span> 1 × $49.00	</span>
-                            </div>
-                            <div class="cart-delete">
-                                <a href="#">×</a>
-                            </div>
-                        </li>
-                        <li class="single-product-cart">
-                            <div class="cart-img">
-                                <a href="#"><img src="public/assets/images/cart/cart-2.jpg" alt=""></a>
-                            </div>
-                            <div class="cart-title">
-                                <h4><a href="#">Contrast faux fur jacket</a></h4>
-                                <span> 1 × $49.00	</span>
-                            </div>
-                            <div class="cart-delete">
-                                <a href="#">×</a>
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="cart-total">
-                        <h4>Subtotal: <span>$170.00</span></h4>
-                    </div>
-                    <div class="cart-checkout-btn">
-                        <a class="btn-hover cart-btn-style" href="cart.html">view cart</a>
-                        <a class="no-mrg btn-hover cart-btn-style" href="checkout.html">checkout</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- aside start -->
-        <div class="header-aside-active">
-            <div class="header-aside-wrap">
-                <a class="aside-close"><i class="dlicon ui-1_simple-remove"></i></a>
-                <div class="header-aside-content">
-                    <div class="mobile-menu-area">
-                        <div class="mobile-search">
-                            <form class="search-form" action="#">
-                                <input type="text" placeholder="Search entire store…">
-                                <button class="button-search"><i class="dlicon ui-1_zoom"></i></button>
-                            </form>
-                        </div>
-                        <div class="mobile-menu-wrap">
-                            <!-- mobile menu start -->
-                            <div class="mobile-navigation">
-                                <!-- mobile menu navigation start -->
-                                <nav>
-                                    <ul class="mobile-menu">
-                                        <li class="menu-item-has-children"><a href="index.html">Home</a>
-                                            <ul class="dropdown">
-                                                <li class="menu-item-has-children"><a href="#">Demo Group 01</a>
-                                                    <ul class="dropdown">
-                                                        <li><a href="index.html">Home 01</a></li>
-                                                        <li><a href="index-2.html">Home 02</a></li>
-                                                        <li><a href="index-3.html">Home 03</a></li>
-                                                        <li><a href="index-4.html">Home 04</a></li>
-                                                        <li><a href="index-5.html">Home 05</a></li>
-                                                        <li><a href="index-6.html">Home 06</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="menu-item-has-children"><a href="#">Demo Group 02</a>
-                                                    <ul class="dropdown">
-                                                        <li><a href="index-7.html">Home 07</a></li>
-                                                        <li><a href="index-8.html">Home 08</a></li>
-                                                        <li><a href="index-9.html">Home 09</a></li>
-                                                        <li><a href="index-10.html">Home 10</a></li>
-                                                        <li><a href="index-11.html">Home 11</a></li>
-                                                        <li><a href="index-12.html">Home 12</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="menu-item-has-children"><a href="#">Demo Group 03</a>
-                                                    <ul class="dropdown">
-                                                        <li><a href="index-13.html">Home 13</a></li>
-                                                        <li><a href="index-14.html">Home 14</a></li>
-                                                        <li><a href="index-15.html">Home 15</a></li>
-                                                        <li><a href="index-16.html">Home 16</a></li>
-                                                        <li><a href="index-17.html">Home 17</a></li>
-                                                        <li><a href="index-18.html">Home 18</a></li>
-                                                        <li><a href="index-19.html">Home 19</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu-item-has-children"><a href="#">Pages</a>
-                                            <ul class="dropdown">
-                                                <li><a href="about-us.html">About Us</a></li>
-                                                <li><a href="contact-us.html">Contact Page</a></li>
-                                                <li><a href="404.html">404 Page</a></li>
-                                                <li><a href="comming-soon.html">Comming Soon 01</a></li>
-                                                <li><a href="comming-soon-2.html">Comming Soon 02</a></li>
-                                                <li><a href="faq.html">FAQ</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu-item-has-children "><a href="shop-fullwide.html">shop</a>
-                                            <ul class="dropdown">
-                                                <li class="menu-item-has-children"><a href="#">Shop Layout</a>
-                                                    <ul class="dropdown">
-                                                        <li><a href="shop-fullwide.html">Shop Fullwidth</a></li>
-                                                        <li><a href="shop-sidebar.html">Shop Sidebar</a></li>
-                                                        <li><a href="shop-metro.html">Shop Metro Layout</a></li>
-                                                        <li><a href="shop-3-col.html">Shop 03 Columns</a></li>
-                                                        <li><a href="shop-2-col.html">Shop 02 Columns</a></li>
-                                                        <li><a href="shop-collection-1.html">Shop Collection 01</a></li>
-                                                        <li><a href="shop-collection-2.html">Shop Collection 02</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="menu-item-has-children"><a href="#">Product Layout</a>
-                                                    <ul class="dropdown">
-                                                        <li><a href="product-details.html">Single 01</a></li>
-                                                        <li><a href="product-details-2.html">Single 02</a></li>
-                                                        <li><a href="product-details-group.html">Grouped</a></li>
-                                                        <li><a href="product-details-sticky.html">Sticky Info</a></li>
-                                                        <li><a href="product-details-configurable.html">Configurable</a></li>
-                                                        <li><a href="product-details-thumbnail.html">Thumbnail</a></li>
-                                                        <li><a href="product-details-video.html">Video</a></li>
-                                                        <li><a href="product-details-affiliate.html">Affiliate</a></li>
-                                                        <li><a href="product-details-sidebar.html">Sidebar</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="menu-item-has-children"><a href="#">Shop Pages </a>
-                                                    <ul class="dropdown">
-                                                        <li><a href="my-account.html">My Account</a></li>
-                                                        <li><a href="checkout.html">Check Out</a></li>
-                                                        <li><a href="cart.html">Shopping Cart</a></li>
-                                                        <li><a href="wishlist.html">Wishlist</a></li>
-                                                        <li><a href="order-tracking.html">Order Tracking</a></li>
-                                                        <li><a href="compare.html">Compare</a></li>
-                                                        <li><a href="login-register.html">login / register</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu-item-has-children "><a href="shop-collection-1.html">Collection</a>
-                                            <ul class="dropdown">
-                                                <li><a href="shop-collection-1.html">Shop Collection 01</a></li>
-                                                <li><a href="shop-collection-2.html">Shop Collection 02</a></li>
-                                                <li><a href="shop-metro.html">Shop Metro Layout</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu-item-has-children "><a href="blog.html">Blog</a>
-                                            <ul class="dropdown">
-                                                <li><a href="blog.html">Blog Style 01</a></li>
-                                                <li><a href="blog-2.html">Blog Style 02</a></li>
-                                                <li><a href="blog-3.html">Blog Style 03</a></li>
-                                                <li><a href="blog-details.html">Single Post Style 01</a></li>
-                                                <li><a href="blog-details-2.html">Single Post Style 02</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="shop-instagram.html">Instagram Shop </a></li>
-                                    </ul>
-                                </nav>
-                                <!-- mobile menu navigation end -->
-                            </div>
-                            <!-- mobile menu end -->
-                        </div>
-                        <div class="mobile-curr-lang-wrap">
-                            <div class="single-mobile-curr-lang">
-                                <a class="mobile-language-active" href="#">Language <i class="fa fa-angle-down"></i></a>
-                                <div class="lang-curr-dropdown lang-dropdown-active">
-                                    <ul>
-                                        <li><a href="#">English (US)</a></li>
-                                        <li><a href="#">English (UK)</a></li>
-                                        <li><a href="#">Spanish</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="single-mobile-curr-lang">
-                                <a class="mobile-currency-active" href="#">Currency <i class="fa fa-angle-down"></i></a>
-                                <div class="lang-curr-dropdown curr-dropdown-active">
-                                    <ul>
-                                        <li><a href="#">USD</a></li>
-                                        <li><a href="#">EUR</a></li>
-                                        <li><a href="#">Real</a></li>
-                                        <li><a href="#">BDT</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="single-mobile-curr-lang">
-                                <a class="mobile-account-active" href="#">My Account <i class="fa fa-angle-down"></i></a>
-                                <div class="lang-curr-dropdown account-dropdown-active">
-                                    <ul>
-                                        <li><a href="#">Login</a></li>
-                                        <li><a href="#">Creat Account</a></li>
-                                        <li><a href="my-account.html">My Account</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="header-aside-menu">
-                        <nav>
-                            <ul>
-                                <li><a href="#">About Toro</a></li>
-                                <li><a href="#">Help Center</a></li>
-                                <li><a href="#">Collection</a></li>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">New Look</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <img src="public/assets/images/icon-img/payments.png" alt="payment">
-                    <p>Pellentesque mollis nec orci id tincidunt. Sed mollis risus eu nisi aliquet, sit amet fermentum justo dapibus.</p>
-                    <div class="aside-contact-info">
-                        <ul>
-                            <li><i class="dlicon ui-2_time-clock"></i>Monday - Friday: 9:00 - 19:00</li>
-                            <li><i class="dlicon ui-1_email-84"></i>Info@la-studioweb.com</li>
-                            <li><i class="dlicon tech-2_rotate"></i>(+55) 254. 254. 254</li>
-                            <li><i class="dlicon ui-1_home-minimal"></i>Helios Tower 75 Tam Trinh Hoang - Ha Noi - Viet Nam</li>
-                        </ul>
-                    </div>
-                    <div class="social-icon-style mb-25">
-                        <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
-                        <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
-                        <a class="google-plus" href="#"><i class="fa fa-google-plus"></i></a>
-                        <a class="behance" href="#"><i class="fa fa-behance"></i></a>
-                    </div>
-                    <div class="copyright">
-                        <p>© 2021 <a href="https://hasthemes.com/">Toro.</a> All rights reserved</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+
         <div class="slider-area">
             <div class="container-fluid p-0">
                 <div class="main-slider-active-3 owl-carousel slider-dot-position-3 slider-dot-style-2">
-                    <div class="single-main-slider slider-animated-1 bg-img slider-height-hm11 align-items-center custom-d-flex" style="background-image:url(public/assets/images/slider/slider-hm11-1.jpg);">
+                    <div class="single-main-slider slider-animated-1 bg-img slider-height-hm11 align-items-center custom-d-flex" style="background-image:url(public/image/<?=$website['banner_website']; ?> );">
                         <div class="row g-0 width-100-percent">
                             <div class="col-lg-12 col-md-12">
                                 <div class="main-slider-content-11-1 text-center">
@@ -289,7 +15,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="single-main-slider slider-animated-1 bg-img slider-height-hm11 align-items-center custom-d-flex" style="background-image:url(public/assets/images/slider/slider-hm11-2.jpg);">
+                    <div class="single-main-slider slider-animated-1 bg-img slider-height-hm11 align-items-center custom-d-flex" style="background-image:url(public/image/<?=$website['banner_website']; ?>);">
                         <div class="row g-0 width-100-percent">
                             <div class="col-lg-12 col-md-12">
                                 <div class="main-slider-content-11-1 text-center">
@@ -307,40 +33,22 @@
         <div class="banner-area section-padding-1 banner-area-hm11 pt-130 pb-100">
             <div class="container-fluid padding-70-row-col">
                 <div class="section-title-12 text-center mb-60">
-                    <h2>Toro Furniture Store</h2>
-                    <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer <br>condimentum sed mi ac efficitur. In sit amet ullamco</p>
+                    <h2>Đặt lịch thiết kế phòng</h2>
+                    <p>Hiện nay, xu hướng thiết kế phòng thường thay đổi theo thời gian và phản ánh sự tiến triển trong thiết kế nội thất. Dưới  <br>đây là một số xu hướng chung về phong cách phòng mà bạn có thể thấy trong thời gian gần đây:</p>
                 </div>
                 <div class="row">
+                    <?php foreach($style_room as $rows): ?>
                     <div class="col-lg-4 col-md-4">
                         <div class="banner-wrap default-overlay-2 banner-zoom mb-30">
                             <div class="banner-img">
-                                <a href="product-details.html"><img src="public/assets/images/banner/banner-22.jpg" alt="banner"></a>
+                                <a href="product-details.html"><img class="img-fluid" src="public/image/<?=$rows['hinh_anh'] ?>" alt="banner"></a>
                             </div>
                             <div class="banner-content-11 text-center">
-                                <h3><a href="product-details.html">Beautiful Cornner</a></h3>
+                                <h3><a href="product-details.html"><?=$rows['ten_style']?></a></h3>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-4">
-                        <div class="banner-wrap default-overlay-2 banner-zoom mb-30">
-                            <div class="banner-img">
-                                <a href="product-details.html"><img src="public/assets/images/banner/banner-23.jpg" alt="banner"></a>
-                            </div>
-                            <div class="banner-content-11 text-center">
-                                <h3><a href="product-details.html">Scandinavian Style</a></h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4">
-                        <div class="banner-wrap default-overlay-2 banner-zoom mb-30">
-                            <div class="banner-img">
-                                <a href="product-details.html"><img src="public/assets/images/banner/banner-24.jpg" alt="banner"></a>
-                            </div>
-                            <div class="banner-content-11 text-center">
-                                <h3><a href="product-details.html">Beautiful Bedroom</a></h3>
-                            </div>
-                        </div>
-                    </div>
+                    <?php endforeach ?>
                 </div>
             </div>
         </div>
@@ -998,36 +706,13 @@
         <div class="brand-area section-padding-3 pt-20 pb-20">
             <div class="container-fluid">
                 <div class="row">
+                    <?php foreach($thuong_hieu as $rows): ?>
                     <div class="col-lg-2 col-md-4 col-6 col-sm-4">
                         <div class="single-brand-logo-2 text-center">
-                            <a href="#"><img src="public/assets/images/brand-logo/brand-logo-1.png" alt=""></a>
+                            <a href="#"><img src="public/image/<?=$rows['anh_thuong_hieu']?>" alt=""></a>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-6 col-sm-4">
-                        <div class="single-brand-logo-2 text-center">
-                            <a href="#"><img src="public/assets/images/brand-logo/brand-logo-2.png" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-6 col-sm-4">
-                        <div class="single-brand-logo-2 text-center">
-                            <a href="#"><img src="public/assets/images/brand-logo/brand-logo-3.png" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-6 col-sm-4">
-                        <div class="single-brand-logo-2 text-center">
-                            <a href="#"><img src="public/assets/images/brand-logo/brand-logo-4.png" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-6 col-sm-4">
-                        <div class="single-brand-logo-2 text-center">
-                            <a href="#"><img src="public/assets/images/brand-logo/brand-logo-5.png" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-6 col-sm-4">
-                        <div class="single-brand-logo-2 text-center">
-                            <a href="#"><img src="public/assets/images/brand-logo/brand-logo-6.png" alt=""></a>
-                        </div>
-                    </div>
+                    <?php endforeach ?>
                 </div>
             </div>
         </div>

@@ -5,6 +5,7 @@
     include "app/model/clientModel/websiteModel.php";
     include "app/model/clientModel/thuongHieuModel.php";
     include "app/model/clientModel/styleRoomModel.php";
+    include "app/model/clientModel/footerModel.php";
 
 
 
@@ -12,6 +13,7 @@
     if(isset($_GET['redirect'])){
         $redirect = $_GET['redirect'];
         include "app/controller/clientController/taiKhoanController.php";
+        include "app/controller/clientController/sanPhamController.php";
     }else{
         include "app/view/client/layout/home.php";
     }

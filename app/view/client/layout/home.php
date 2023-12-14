@@ -9,7 +9,7 @@
                                 <div class="main-slider-content-11-1 text-center">
                                     <h1 class="animated">Scandinavian interior </h1>
                                     <div class="slider-btn-2 slider-btn-2-border-white">
-                                        <a class="animated" href="product-details.html">SHOP NOW </a>
+                                        <a class="animated" href="index.php?redirect=chitietsp&id_san_pham=">SHOP NOW </a>
                                     </div>
                                 </div>
                             </div>
@@ -21,7 +21,7 @@
                                 <div class="main-slider-content-11-1 text-center">
                                     <h1 class="animated">Scandinavian interior </h1>
                                     <div class="slider-btn-2 slider-btn-2-border-white">
-                                        <a class="animated" href="product-details.html">SHOP NOW </a>
+                                        <a class="animated" href="index.php?redirect=chitietsp&id_san_pham=">SHOP NOW </a>
                                     </div>
                                 </div>
                             </div>
@@ -36,18 +36,16 @@
                     <h2>Đặt lịch thiết kế phòng</h2>
                     <p>Hiện nay, xu hướng thiết kế phòng thường thay đổi theo thời gian và phản ánh sự tiến triển trong thiết kế nội thất. Dưới  <br>đây là một số xu hướng chung về phong cách phòng mà bạn có thể thấy trong thời gian gần đây:</p>
                 </div>
-                <div class="row">
+                <div class="row related-product-active owl-carousel">
                     <?php foreach($style_room as $rows): ?>
-                    <div class="col-lg-4 col-md-4">
                         <div class="banner-wrap default-overlay-2 banner-zoom mb-30">
                             <div class="banner-img">
-                                <a href="product-details.html"><img class="img-fluid" src="public/image/<?=$rows['hinh_anh'] ?>" alt="banner"></a>
+                                <a href="index.php?redirect=chitietsp&id_san_pham="><img class="img-fluid" style="height:200px" src="public/image/<?=$rows['hinh_anh'] ?>" alt="banner"></a>
                             </div>
                             <div class="banner-content-11 text-center">
-                                <h3><a href="product-details.html"><?=$rows['ten_style']?></a></h3>
+                                <h3><a href="index.php?redirect=chitietsp&id_san_pham="><?=$rows['ten_style']?></a></h3>
                             </div>
                         </div>
-                    </div>
                     <?php endforeach ?>
                 </div>
             </div>
@@ -62,7 +60,7 @@
                     <div class="custom-col-5">
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
-                                <a href="product-details.html">
+                                <a href="index.php?redirect=chitietsp&id_san_pham=">
                                     <img class="default-img" src="public/assets/images/product/product-32.jpg" alt="">
                                 </a>
                                 <div class="product-action product-action-sky product-action-position-1">
@@ -73,7 +71,7 @@
                                 </div>
                             </div>
                             <div class="product-content-4 product-content-sky title-font-width-400 text-center">
-                                <h3><a href="product-details.html">Dapibus ac mi shoes</a></h3>
+                                <h3><a href="index.php?redirect=chitietsp&id_san_pham=">Dapibus ac mi shoes</a></h3>
                                 <div class="product-price product-price-red">
                                     <span class="new-price">$42.00</span>
                                 </div>
@@ -83,7 +81,7 @@
                     <div class="custom-col-5">
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
-                                <a href="product-details.html">
+                                <a href="index.php?redirect=chitietsp&id_san_pham=">
                                     <img class="default-img" src="public/assets/images/product/product-33.jpg" alt="">
                                     <span class="badge-black-before badge-right-0 badge-top-0 badge-pr badge-pt">sale!</span>
                                 </a>
@@ -95,7 +93,7 @@
                                 </div>
                             </div>
                             <div class="product-content-4 product-content-sky title-font-width-400 text-center">
-                                <h3><a href="product-details.html">Dapibus ac mi shoes</a></h3>
+                                <h3><a href="index.php?redirect=chitietsp&id_san_pham=">Dapibus ac mi shoes</a></h3>
                                 <div class="product-price product-price-red">
                                     <span class="old-price">$49.00</span>
                                     <span class="new-price">$42.00</span>
@@ -106,7 +104,7 @@
                     <div class="custom-col-5">
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
-                                <a href="product-details.html">
+                                <a href="index.php?redirect=chitietsp&id_san_pham=">
                                     <img class="default-img" src="public/assets/images/product/product-34.jpg" alt="">
                                 </a>
                                 <div class="product-action product-action-sky product-action-position-1">
@@ -117,7 +115,7 @@
                                 </div>
                             </div>
                             <div class="product-content-4 product-content-sky title-font-width-400 text-center">
-                                <h3><a href="product-details.html">Dapibus ac mi shoes</a></h3>
+                                <h3><a href="index.php?redirect=chitietsp&id_san_pham=">Dapibus ac mi shoes</a></h3>
                                 <div class="product-price product-price-red">
                                     <span class="new-price">$42.00</span>
                                 </div>
@@ -127,7 +125,7 @@
                     <div class="custom-col-5">
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
-                                <a href="product-details.html">
+                                <a href="index.php?redirect=chitietsp&id_san_pham=">
                                     <img class="default-img" src="public/assets/images/product/product-35.jpg" alt="">
                                     <span class="badge-red badge-right-20 badge-top-20 badge-width-height-2 badge-border-radius-100">sale!</span>
                                 </a>
@@ -139,7 +137,7 @@
                                 </div>
                             </div>
                             <div class="product-content-4 product-content-sky title-font-width-400 text-center">
-                                <h3><a href="product-details.html">Dapibus ac mi shoes</a></h3>
+                                <h3><a href="index.php?redirect=chitietsp&id_san_pham=">Dapibus ac mi shoes</a></h3>
                                 <div class="product-price product-price-red">
                                     <span class="new-price">$42.00</span>
                                 </div>
@@ -149,7 +147,7 @@
                     <div class="custom-col-5">
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
-                                <a href="product-details.html">
+                                <a href="index.php?redirect=chitietsp&id_san_pham=">
                                     <img class="default-img" src="public/assets/images/product/product-36.jpg" alt="">
                                 </a>
                                 <div class="product-action product-action-sky product-action-position-1">
@@ -160,7 +158,7 @@
                                 </div>
                             </div>
                             <div class="product-content-4 product-content-sky title-font-width-400 text-center">
-                                <h3><a href="product-details.html">Dapibus ac mi shoes</a></h3>
+                                <h3><a href="index.php?redirect=chitietsp&id_san_pham=">Dapibus ac mi shoes</a></h3>
                                 <div class="product-price product-price-red">
                                     <span class="new-price">$42.00</span>
                                 </div>
@@ -170,7 +168,7 @@
                     <div class="custom-col-5">
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
-                                <a href="product-details.html">
+                                <a href="index.php?redirect=chitietsp&id_san_pham=">
                                     <img class="default-img" src="public/assets/images/product/product-37.jpg" alt="">
                                     <span class="badge-black-before badge-right-0 badge-top-0 badge-pr badge-pt">-7.7%</span>
                                 </a>
@@ -182,7 +180,7 @@
                                 </div>
                             </div>
                             <div class="product-content-4 product-content-sky title-font-width-400 text-center">
-                                <h3><a href="product-details.html">Dapibus ac mi shoes</a></h3>
+                                <h3><a href="index.php?redirect=chitietsp&id_san_pham=">Dapibus ac mi shoes</a></h3>
                                 <div class="product-price product-price-red">
                                     <span class="new-price">$42.00</span>
                                 </div>
@@ -192,7 +190,7 @@
                     <div class="custom-col-5">
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
-                                <a href="product-details.html">
+                                <a href="index.php?redirect=chitietsp&id_san_pham=">
                                     <img class="default-img" src="public/assets/images/product/product-38.jpg" alt="">
                                 </a>
                                 <div class="product-action product-action-sky product-action-position-1">
@@ -203,7 +201,7 @@
                                 </div>
                             </div>
                             <div class="product-content-4 product-content-sky title-font-width-400 text-center">
-                                <h3><a href="product-details.html">Mid – Augue et eleifend tincidunt</a></h3>
+                                <h3><a href="index.php?redirect=chitietsp&id_san_pham=">Mid – Augue et eleifend tincidunt</a></h3>
                                 <div class="product-price product-price-red">
                                     <span class="new-price">$42.00</span>
                                 </div>
@@ -213,7 +211,7 @@
                     <div class="custom-col-5">
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
-                                <a href="product-details.html">
+                                <a href="index.php?redirect=chitietsp&id_san_pham=">
                                     <img class="default-img" src="public/assets/images/product/product-39.jpg" alt="">
                                 </a>
                                 <div class="product-action product-action-sky product-action-position-1">
@@ -224,7 +222,7 @@
                                 </div>
                             </div>
                             <div class="product-content-4 product-content-sky title-font-width-400 text-center">
-                                <h3><a href="product-details.html">Home sofa ante a elit</a></h3>
+                                <h3><a href="index.php?redirect=chitietsp&id_san_pham=">Home sofa ante a elit</a></h3>
                                 <div class="product-price product-price-red">
                                     <span class="new-price">$42.00</span>
                                 </div>
@@ -234,7 +232,7 @@
                     <div class="custom-col-5">
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
-                                <a href="product-details.html">
+                                <a href="index.php?redirect=chitietsp&id_san_pham=">
                                     <img class="default-img" src="public/assets/images/product/product-40.jpg" alt="">
                                 </a>
                                 <div class="product-action product-action-sky product-action-position-1">
@@ -245,7 +243,7 @@
                                 </div>
                             </div>
                             <div class="product-content-4 product-content-sky title-font-width-400 text-center">
-                                <h3><a href="product-details.html">Century sofa auctor iaculis</a></h3>
+                                <h3><a href="index.php?redirect=chitietsp&id_san_pham=">Century sofa auctor iaculis</a></h3>
                                 <div class="product-price product-price-red">
                                     <span class="new-price">$42.00</span>
                                 </div>
@@ -255,7 +253,7 @@
                     <div class="custom-col-5">
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
-                                <a href="product-details.html">
+                                <a href="index.php?redirect=chitietsp&id_san_pham=">
                                     <img class="default-img" src="public/assets/images/product/product-41.jpg" alt="">
                                 </a>
                                 <div class="product-action product-action-sky product-action-position-1">
@@ -266,7 +264,7 @@
                                 </div>
                             </div>
                             <div class="product-content-4 product-content-sky title-font-width-400 text-center">
-                                <h3><a href="product-details.html">Mid – Century Sofa</a></h3>
+                                <h3><a href="index.php?redirect=chitietsp&id_san_pham=">Mid – Century Sofa</a></h3>
                                 <div class="product-price product-price-red">
                                     <span class="new-price">$42.00</span>
                                 </div>
@@ -332,7 +330,7 @@
                     <div class="custom-col-5">
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
-                                <a href="product-details.html">
+                                <a href="index.php?redirect=chitietsp&id_san_pham=">
                                     <img class="default-img" src="public/assets/images/product/product-42.jpg" alt="">
                                 </a>
                                 <div class="product-action product-action-sky product-action-position-1">
@@ -343,7 +341,7 @@
                                 </div>
                             </div>
                             <div class="product-content-4 product-content-sky title-font-width-400 text-center">
-                                <h3><a href="product-details.html">Dapibus ac mi shoes</a></h3>
+                                <h3><a href="index.php?redirect=chitietsp&id_san_pham=">Dapibus ac mi shoes</a></h3>
                                 <div class="product-price product-price-red">
                                     <span class="new-price">$42.00</span>
                                 </div>
@@ -353,7 +351,7 @@
                     <div class="custom-col-5">
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
-                                <a href="product-details.html">
+                                <a href="index.php?redirect=chitietsp&id_san_pham=">
                                     <img class="default-img" src="public/assets/images/product/product-43.jpg" alt="">
                                     <span class="badge-black-before badge-right-0 badge-top-0 badge-pr badge-pt">sale!</span>
                                 </a>
@@ -365,7 +363,7 @@
                                 </div>
                             </div>
                             <div class="product-content-4 product-content-sky title-font-width-400 text-center">
-                                <h3><a href="product-details.html">Dapibus ac mi shoes</a></h3>
+                                <h3><a href="index.php?redirect=chitietsp&id_san_pham=">Dapibus ac mi shoes</a></h3>
                                 <div class="product-price product-price-red">
                                     <span class="old-price">$49.00</span>
                                     <span class="new-price">$42.00</span>
@@ -376,7 +374,7 @@
                     <div class="custom-col-5">
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
-                                <a href="product-details.html">
+                                <a href="index.php?redirect=chitietsp&id_san_pham=">
                                     <img class="default-img" src="public/assets/images/product/product-44.jpg" alt="">
                                 </a>
                                 <div class="product-action product-action-sky product-action-position-1">
@@ -387,7 +385,7 @@
                                 </div>
                             </div>
                             <div class="product-content-4 product-content-sky title-font-width-400 text-center">
-                                <h3><a href="product-details.html">Dapibus ac mi shoes</a></h3>
+                                <h3><a href="index.php?redirect=chitietsp&id_san_pham=">Dapibus ac mi shoes</a></h3>
                                 <div class="product-price product-price-red">
                                     <span class="new-price">$42.00</span>
                                 </div>
@@ -397,7 +395,7 @@
                     <div class="custom-col-5">
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
-                                <a href="product-details.html">
+                                <a href="index.php?redirect=chitietsp&id_san_pham=">
                                     <img class="default-img" src="public/assets/images/product/product-45.jpg" alt="">
                                     <span class="badge-red badge-right-20 badge-top-20 badge-width-height-2 badge-border-radius-100">sale!</span>
                                 </a>
@@ -409,7 +407,7 @@
                                 </div>
                             </div>
                             <div class="product-content-4 product-content-sky title-font-width-400 text-center">
-                                <h3><a href="product-details.html">Dapibus ac mi shoes</a></h3>
+                                <h3><a href="index.php?redirect=chitietsp&id_san_pham=">Dapibus ac mi shoes</a></h3>
                                 <div class="product-price product-price-red">
                                     <span class="new-price">$42.00</span>
                                 </div>
@@ -419,7 +417,7 @@
                     <div class="custom-col-5">
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
-                                <a href="product-details.html">
+                                <a href="index.php?redirect=chitietsp&id_san_pham=">
                                     <img class="default-img" src="public/assets/images/product/product-46.jpg" alt="">
                                 </a>
                                 <div class="product-action product-action-sky product-action-position-1">
@@ -430,7 +428,7 @@
                                 </div>
                             </div>
                             <div class="product-content-4 product-content-sky title-font-width-400 text-center">
-                                <h3><a href="product-details.html">Dapibus ac mi shoes</a></h3>
+                                <h3><a href="index.php?redirect=chitietsp&id_san_pham=">Dapibus ac mi shoes</a></h3>
                                 <div class="product-price product-price-red">
                                     <span class="new-price">$42.00</span>
                                 </div>
@@ -440,7 +438,7 @@
                     <div class="custom-col-5">
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
-                                <a href="product-details.html">
+                                <a href="index.php?redirect=chitietsp&id_san_pham=">
                                     <img class="default-img" src="public/assets/images/product/product-47.jpg" alt="">
                                     <span class="badge-black-before badge-right-0 badge-top-0 badge-pr badge-pt">-7.7%</span>
                                 </a>
@@ -452,7 +450,7 @@
                                 </div>
                             </div>
                             <div class="product-content-4 product-content-sky title-font-width-400 text-center">
-                                <h3><a href="product-details.html">Dapibus ac mi shoes</a></h3>
+                                <h3><a href="index.php?redirect=chitietsp&id_san_pham=">Dapibus ac mi shoes</a></h3>
                                 <div class="product-price product-price-red">
                                     <span class="new-price">$42.00</span>
                                 </div>
@@ -462,7 +460,7 @@
                     <div class="custom-col-5">
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
-                                <a href="product-details.html">
+                                <a href="index.php?redirect=chitietsp&id_san_pham=">
                                     <img class="default-img" src="public/assets/images/product/product-48.jpg" alt="">
                                 </a>
                                 <div class="product-action product-action-sky product-action-position-1">
@@ -473,7 +471,7 @@
                                 </div>
                             </div>
                             <div class="product-content-4 product-content-sky title-font-width-400 text-center">
-                                <h3><a href="product-details.html">Mid – Augue et eleifend tincidunt</a></h3>
+                                <h3><a href="index.php?redirect=chitietsp&id_san_pham=">Mid – Augue et eleifend tincidunt</a></h3>
                                 <div class="product-price product-price-red">
                                     <span class="new-price">$42.00</span>
                                 </div>
@@ -483,7 +481,7 @@
                     <div class="custom-col-5">
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
-                                <a href="product-details.html">
+                                <a href="index.php?redirect=chitietsp&id_san_pham=">
                                     <img class="default-img" src="public/assets/images/product/product-49.jpg" alt="">
                                 </a>
                                 <div class="product-action product-action-sky product-action-position-1">
@@ -494,7 +492,7 @@
                                 </div>
                             </div>
                             <div class="product-content-4 product-content-sky title-font-width-400 text-center">
-                                <h3><a href="product-details.html">Home sofa ante a elit</a></h3>
+                                <h3><a href="index.php?redirect=chitietsp&id_san_pham=">Home sofa ante a elit</a></h3>
                                 <div class="product-price product-price-red">
                                     <span class="new-price">$42.00</span>
                                 </div>
@@ -504,7 +502,7 @@
                     <div class="custom-col-5">
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
-                                <a href="product-details.html">
+                                <a href="index.php?redirect=chitietsp&id_san_pham=">
                                     <img class="default-img" src="public/assets/images/product/product-50.jpg" alt="">
                                 </a>
                                 <div class="product-action product-action-sky product-action-position-1">
@@ -515,7 +513,7 @@
                                 </div>
                             </div>
                             <div class="product-content-4 product-content-sky title-font-width-400 text-center">
-                                <h3><a href="product-details.html">Century sofa auctor iaculis</a></h3>
+                                <h3><a href="index.php?redirect=chitietsp&id_san_pham=">Century sofa auctor iaculis</a></h3>
                                 <div class="product-price product-price-red">
                                     <span class="new-price">$42.00</span>
                                 </div>
@@ -525,7 +523,7 @@
                     <div class="custom-col-5">
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
-                                <a href="product-details.html">
+                                <a href="index.php?redirect=chitietsp&id_san_pham=">
                                     <img class="default-img" src="public/assets/images/product/product-51.jpg" alt="">
                                 </a>
                                 <div class="product-action product-action-sky product-action-position-1">
@@ -536,7 +534,7 @@
                                 </div>
                             </div>
                             <div class="product-content-4 product-content-sky title-font-width-400 text-center">
-                                <h3><a href="product-details.html">Mid – Century Sofa</a></h3>
+                                <h3><a href="index.php?redirect=chitietsp&id_san_pham=">Mid – Century Sofa</a></h3>
                                 <div class="product-price product-price-red">
                                     <span class="new-price">$42.00</span>
                                 </div>

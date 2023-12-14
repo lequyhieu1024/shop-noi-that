@@ -3,6 +3,7 @@
     $website = listws();
     $thuong_hieu = listth();
     $style_room = listsr();
+    $footer = listft();
 ?>
 <!doctype html>
 <html class="no-js" lang="en">
@@ -87,9 +88,9 @@
                             <div class="main-menu menu-lh-1 main-menu-light-black menu-padding-li-none menu-padding-a main-menu-border-none">
                                 <nav>
                                     <ul>
-                                        <li class="position-static"><a href="index.php">Home</a>
+                                        <li class="position-static"><a href="index.php">Trang chủ</a>
                                         </li>
-                                        <li><a href="#">Pages</a>
+                                        <li><a href="#">Danh mục</a>
                                             <ul class="sub-menu-width">
                                                 <li><a href="about-us.html">About Us</a></li>
                                                 <li><a href="contact-us.html">Contact Page</a></li>

@@ -413,47 +413,32 @@
             <a href="#" class="nav-link bg-secondary">
               <i class="nav-icon"></i>
               <p>
-                Footer
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="index.php?act=allrole&table=role" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Danh sách</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="index.php?act=addrole" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Thêm title footer</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link bg-secondary">
-              <i class="nav-icon"></i>
-              <p>
                 Content footer
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="index.php?act=allrole&table=role" class="nav-link">
+                <a href="index.php?act=listctft" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Danh sách</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="index.php?act=addrole" class="nav-link">
+                <a href="index.php?act=addctft" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Thêm content</p>
                 </a>
               </li>
             </ul>
+          </li>
+          <li class="nav-item">
+            <a href="index.php?act=listft" class="nav-link bg-secondary">
+              <i class="nav-icon"></i>
+              <p>
+                Footer
+              </p>
+            </a>
           </li>
           <li class="nav-item">
             <a href="index.php?act=listws" class="nav-link bg-secondary">

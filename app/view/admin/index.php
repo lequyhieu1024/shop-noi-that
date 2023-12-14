@@ -3,13 +3,13 @@ session_start();
 if(isset($_SESSION['id_role'])){
     if($_SESSION['id_role']==1){
         include("../../../config.php");
-        // include("../../models/AdminModel/binhluan.php");
+        include("../../model/AdminModel/contentFooterModel.php");
         include("../../model/AdminModel/danhmucmodel.php");
         include("../../model/AdminModel/sanphammodel.php");
         include("../../model/AdminModel/thuonghieumodel.php");
         include("../../model/AdminModel/websitemodel.php");
         include("../../model/AdminModel/styleRoomModel.php");
-        // include("../../models/AdminModel/taikhoan.php");
+        include("../../model/AdminModel/footerModel.php");
         // include("../../models/AdminModel/khuyenmai.php");
         // include("../../models/AdminModel/trangthai.php");
         // include("../../models/AdminModel/lotrinhhoc.php");
@@ -25,6 +25,8 @@ if(isset($_SESSION['id_role'])){
                         include "../../controller/adminController/thuongHieuController.php";
                         include "../../controller/adminController/websiteController.php";
                         include "../../controller/adminController/styleRoomController.php";
+                        include "../../controller/adminController/footerController.php";
+                        include "../../controller/adminController/contentFooterController.php";
                 }else{
                         // include "../../view/admin/layout/home.php";
                 }

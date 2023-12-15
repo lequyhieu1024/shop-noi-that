@@ -10,6 +10,7 @@
         $result = pdo_query($sql);
         return $result;
     }
+
     
     function addsp($ten_san_pham,$anh_san_pham,$mo_ta,
     $gia_tien,$so_luong,$id_danh_muc,$id_thuong_hieu,$show_san_pham)

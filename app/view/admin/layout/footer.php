@@ -49,5 +49,7 @@
 <!-- AdminLTE for demo purposes -->
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="../../../public/admin/dist/js/pages/dashboard.js"></script>
+<!-- Show form trong phần thêm biến thể -->
+<script src="../../../public/admin/dist/js/showForm.js"></script>
 </body>
 </html>

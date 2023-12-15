@@ -221,29 +221,6 @@
             <a href="#" class="nav-link bg-secondary">
               <i class="nav-icon"></i>
               <p>
-                Biến thể sản phẩm
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="index.php?act=listbienthe" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Danh sách</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="index.php?act=addbienthe" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Thêm biến thể</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link bg-secondary">
-              <i class="nav-icon"></i>
-              <p>
                 Thương hiệu
                 <i class="right fas fa-angle-left"></i>
               </p>

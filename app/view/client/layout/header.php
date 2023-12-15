@@ -94,7 +94,7 @@
                                         <li><a href="#">Danh mục</a>
                                             <ul class="sub-menu-width">
                                                 <?php foreach($danh_muc as  $row):?>
-                                                <li><a href="<?=$row['id_danh_muc'] ?>"><?=$row['ten_danh_muc']?></a></li>
+                                                <li><a href="index.php?redirect=danhmucsp&id=<?=$row['id_danh_muc'] ?>"><?=$row['ten_danh_muc']?></a></li>
                                                 <?php endforeach ?>
                                             </ul>
                                         </li>

@@ -4,6 +4,16 @@
             $listsp = listsp();
             include "page/sanpham/listsp.php";
             break;
+            
+        case 'chitietsp':
+            $id_san_pham = $_GET['id'];
+            $listsp = listsp();
+            $listdm = listdm();
+            $listth = listth();
+            $load_one_sp = load_one_sp($id_san_pham);
+            $load_all_bien_the = load_all_bien_the($id_san_pham);
+            include "page/sanpham/chitietsp.php";
+            break;
 
         case 'addsp':
             $listdm = listdm();

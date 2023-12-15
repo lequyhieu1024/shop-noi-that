@@ -23,9 +23,9 @@
                     <td><img style="width: 180px;height:100px" class="img-fluid" src="../../../public/image/<?= $anh_san_pham ?>" alt=""></td>
                     <td><?= $show_san_pham == 0 ? "Ẩn":"Hiện" ?></td>
                     <td>
-                        <a href="index.php?act=editsp&id=<?=$id_san_pham?>"><button class="mb-2 btn btn-success">Xem chi tiết</button></a><br>
-                        <a href="index.php?act=editsp&id=<?=$id_san_pham?>"><button class="btn btn-warning">Sửa</button></a>
-                        <a href="index.php?act=deletesp&id=<?=$id_san_pham?>"><button class="btn btn-danger">Xóa</button></a>
+                        <a href="index.php?act=chitietsp&id=<?=$id_san_pham?>"><button class="btn btn-success"><i class="fa fa-info nav-icon"></i></button></a>
+                        <a href="index.php?act=editsp&id=<?=$id_san_pham?>"><button class="btn btn-warning"><i class="far fa-edit nav-icon"></i></button></a>
+                        <a href="index.php?act=deletesp&id=<?=$id_san_pham?>"><button class="btn btn-danger"><i class="fa fa-trash nav-icon"></i></button></a>
                     </td>
                 </tr>
 

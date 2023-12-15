@@ -387,27 +387,12 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link bg-secondary">
+            <a href="index.php?act=listnb" class="nav-link bg-secondary">
               <i class="nav-icon"></i>
               <p>
                 Navbar
-                <i class="right fas fa-angle-left"></i>
               </p>
             </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="index.php?act=allrole&table=role" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Danh sách</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="index.php?act=addrole" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Thêm navbar</p>
-                </a>
-              </li>
-            </ul>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link bg-secondary">

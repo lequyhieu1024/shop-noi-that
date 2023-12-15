@@ -2,10 +2,12 @@
     session_start();
     include "config.php";
     include "app/model/clientModel/taiKhoanModel.php";
+    include "app/model/clientModel/danhMucModel.php";
     include "app/model/clientModel/websiteModel.php";
     include "app/model/clientModel/thuongHieuModel.php";
     include "app/model/clientModel/styleRoomModel.php";
     include "app/model/clientModel/footerModel.php";
+    include "app/model/clientModel/navbarModel.php";
 
 
 

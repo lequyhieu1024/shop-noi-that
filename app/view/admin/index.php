@@ -10,7 +10,7 @@ if(isset($_SESSION['id_role'])){
         include("../../model/AdminModel/websitemodel.php");
         include("../../model/AdminModel/styleRoomModel.php");
         include("../../model/AdminModel/footerModel.php");
-        // include("../../models/AdminModel/khuyenmai.php");
+        include("../../model/AdminModel/navbarModel.php");
         // include("../../models/AdminModel/trangthai.php");
         // include("../../models/AdminModel/lotrinhhoc.php");
         // include("../../models/AdminModel/lotrinhkhoahoc.php");
@@ -27,6 +27,7 @@ if(isset($_SESSION['id_role'])){
                         include "../../controller/adminController/styleRoomController.php";
                         include "../../controller/adminController/footerController.php";
                         include "../../controller/adminController/contentFooterController.php";
+                        include "../../controller/adminController/navbarController.php";
                 }else{
                         // include "../../view/admin/layout/home.php";
                 }

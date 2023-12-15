@@ -1,9 +1,11 @@
-<?php ob_start();
-
+<?php 
+    ob_start();
     $website = listws();
     $thuong_hieu = listth();
     $style_room = listsr();
     $footer = listft();
+    $navbar = listnb();
+    $danh_muc = listdm();
 ?>
 <!doctype html>
 <html class="no-js" lang="en">
@@ -88,86 +90,17 @@
                             <div class="main-menu menu-lh-1 main-menu-light-black menu-padding-li-none menu-padding-a main-menu-border-none">
                                 <nav>
                                     <ul>
-                                        <li class="position-static"><a href="index.php">Trang chủ</a>
-                                        </li>
+                                        <li class="position-static"><a href="index.php">Trang chủ</a></li>
                                         <li><a href="#">Danh mục</a>
                                             <ul class="sub-menu-width">
-                                                <li><a href="about-us.html">About Us</a></li>
-                                                <li><a href="contact-us.html">Contact Page</a></li>
-                                                <li><a href="404.html">404 Page</a></li>
-                                                <li><a href="comming-soon.html">Comming Soon 01</a></li>
-                                                <li><a href="comming-soon-2.html">Comming Soon 02</a></li>
-                                                <li><a href="faq.html">FAQ</a></li>
+                                                <?php foreach($danh_muc as  $row):?>
+                                                <li><a href="<?=$row['id_danh_muc'] ?>"><?=$row['ten_danh_muc']?></a></li>
+                                                <?php endforeach ?>
                                             </ul>
                                         </li>
-                                        <li><a href="shop-fullwide.html">Shop</a>
-                                            <ul class="mega-menu-style-2 mega-menu-width2 menu-negative-mrg1">
-                                                <li class="mega-menu-sub-width20"><a class="menu-title" href="#">Shop Layout</a>
-                                                    <ul>
-                                                        <li><a href="shop-fullwide.html">Shop Fullwidth</a></li>
-                                                        <li><a href="shop-sidebar.html">Shop Sidebar</a></li>
-                                                        <li><a href="shop-metro.html">Shop Metro Layout</a></li>
-                                                        <li><a href="shop-3-col.html">Shop 03 Columns</a></li>
-                                                        <li><a href="shop-2-col.html">Shop 02 Columns</a></li>
-                                                        <li><a href="shop-collection-1.html">Shop Collection 01</a></li>
-                                                        <li><a href="shop-collection-2.html">Shop Collection 02</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="mega-menu-sub-width22"><a class="menu-title" href="#">Product Layout</a>
-                                                    <ul>
-                                                        <li><a href="product-details.html">Single 01</a></li>
-                                                        <li><a href="product-details-2.html">Single 02</a></li>
-                                                        <li><a href="product-details-group.html">Grouped</a></li>
-                                                        <li><a href="product-details-sticky.html">Sticky Info</a></li>
-                                                        <li><a href="product-details-configurable.html">Configurable</a></li>
-                                                        <li><a href="product-details-thumbnail.html">Thumbnail</a></li>
-                                                        <li><a href="product-details-video.html">Video</a></li>
-                                                        <li><a href="product-details-affiliate.html">Affiliate</a></li>
-                                                        <li><a href="product-details-sidebar.html">Sidebar</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="mega-menu-sub-width20"><a class="menu-title" href="#">Shop Pages</a>
-                                                    <ul>
-                                                        <li><a href="my-account.html">My Account</a></li>
-                                                        <li><a href="checkout.html">Check Out</a></li>
-                                                        <li><a href="cart.html">Shopping Cart</a></li>
-                                                        <li><a href="wishlist.html">Wishlist</a></li>
-                                                        <li><a href="order-tracking.html">Order Tracking</a></li>
-                                                        <li><a href="compare.html">Compare</a></li>
-                                                        <li><a href="index.php?redirect=login">login / register</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="mega-menu-sub-width37">
-                                                    <div class="banner-menu-content-wrap default-overlay">
-                                                        <a href="product-details.html"><img src="public/assets/images/menu/banner-header.jpg" alt="banner"></a>
-                                                        <div class="banner-menu-content">
-                                                            <h2>Bikini <br>Collections</h2>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="shop-collection-1.html">Collections </a>
-                                            <ul class="sub-menu-width">
-                                                <li><a href="shop-collection-1.html">Shop Collection 01</a></li>
-                                                <li><a href="shop-collection-2.html">Shop Collection 02</a></li>
-                                                <li><a href="shop-metro.html">Shop Metro Layout</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="blog.html">Blog</a>
-                                            <ul class="sub-menu-width">
-                                                <li><a href="blog.html">Blog Style 01</a></li>
-                                                <li><a href="blog-2.html">Blog Style 02</a></li>
-                                                <li><a href="blog-3.html">Blog Style 03</a></li>
-                                                <li><a href="#">Single Posts <i class="fa fa-angle-right"></i></a>
-                                                    <ul class="lavel-menu">
-                                                        <li><a href="blog-details.html">Single Post Style 01</a></li>
-                                                        <li><a href="blog-details-2.html">Single Post Style 02</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="shop-instagram.html">Instagram Shop </a></li>
+                                        <?php foreach($navbar as $row):?>
+                                        <li><a href="<?=$row['link_navbar']?>"><?=$row['ten_navbar']?></a></li> 
+                                        <?php endforeach?>
                                     </ul>
                                 </nav>
                             </div>

@@ -73,8 +73,10 @@
             include "page/sanpham/editsp.php";
             break;
 
-        case 'xoasp':
-            echo '<script>alert("xóa sản phẩm")</script>';
+        case 'deletesp':
+            $id_san_pham = $_GET['id'];
+            deletesp($id_san_pham);
+            echo '<script>window.location.href = "index.php?act=listsp"</script>';
             break;
     }
 ?>

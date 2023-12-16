@@ -48,6 +48,10 @@
       <th scope="row">Rate Website</th>
       <td><input type="number" name="rate" value="<?=$rate?>"></td>
     </tr>
+    </tr>
+      <th scope="row">Location</th>
+      <td><input type="text" name="location" value="<?=$location?>"></td>
+    </tr>
   </tbody>
 </table>
 <input class="btn btn-success" type="submit" value="Cập nhật" name="editws">

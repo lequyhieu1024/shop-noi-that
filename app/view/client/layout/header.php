@@ -6,6 +6,8 @@
     $footer = listft();
     $navbar = listnb();
     $danh_muc = listdm();
+    $san_pham = load_newest_product_limit8();
+    $san_pham_view_cao = load_most_viewed_product_limit8();
 ?>
 <!doctype html>
 <html class="no-js" lang="en">
@@ -42,6 +44,18 @@
     <link rel="stylesheet" href="public/assets/css/plugins/select2.min.css">
     <link rel="stylesheet" href="public/assets/css/style.css">
 
+    <style>
+        .custom-scrollbar {
+            max-height: 100px;
+            overflow: auto;
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            display: none;  /* Chrome and Safari */
+        }
+
+    </style>
 </head>
 
 <body>

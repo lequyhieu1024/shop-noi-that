@@ -53,15 +53,16 @@
         <div class="product-area section-padding-1 pb-125">
             <div class="container-fluid">
                 <div class="section-title-12 text-center mb-65">
-                    <h2>New arrival</h2>
-                    <p>Class aptent taciti sociosqu ad litora torquent per con</p>
+                    <h2>Sản phẩm mới nhất</h2>
+                    <p>Sản phẩm mới về có nhiều ưu đãi, hãy mua ngay !</p>
                 </div>
                 <div class="row">
+                    <?php foreach($san_pham as $rows): ?>
                     <div class="custom-col-5">
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
-                                <a href="index.php?redirect=chitietsp&id_san_pham=">
-                                    <img class="default-img" src="public/assets/images/product/product-32.jpg" alt="">
+                                <a href="index.php?redirect=chitietsp&id_san_pham=<?=$rows['id_san_pham']?>">
+                                    <img class="img-fluid" style="height: 400px;" src="public/image/<?=$rows['anh_san_pham']?>" alt="">
                                 </a>
                                 <div class="product-action product-action-sky product-action-position-1">
                                     <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="fa fa-eye"></i><span>Quick Shop</span></a>
@@ -71,206 +72,14 @@
                                 </div>
                             </div>
                             <div class="product-content-4 product-content-sky title-font-width-400 text-center">
-                                <h3><a href="index.php?redirect=chitietsp&id_san_pham=">Dapibus ac mi shoes</a></h3>
+                                <h3><a href="index.php?redirect=chitietsp&id_san_pham="><?=$rows['ten_san_pham']?></a></h3>
                                 <div class="product-price product-price-red">
-                                    <span class="new-price">$42.00</span>
+                                    <span class="new-price"><?=number_format($rows['gia_tien'], 0 )?> <sup>vnđ</sup></span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="custom-col-5">
-                        <div class="product-wrap mb-50">
-                            <div class="product-img default-overlay mb-25">
-                                <a href="index.php?redirect=chitietsp&id_san_pham=">
-                                    <img class="default-img" src="public/assets/images/product/product-33.jpg" alt="">
-                                    <span class="badge-black-before badge-right-0 badge-top-0 badge-pr badge-pt">sale!</span>
-                                </a>
-                                <div class="product-action product-action-sky product-action-position-1">
-                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="fa fa-eye"></i><span>Quick Shop</span></a>
-                                    <a title="Add to Wishlist" href="#"><i class="fa fa-heart"></i><span>Add to Wishlist</span></a>
-                                    <a class="icon-blod" title="Add to Compare" href="#"><i class="dlicon arrows-4_compare"></i><span>Add to Compare</span></a>
-                                    <a title="Add to Cart" href="#"><i class="fa fa-shopping-cart"></i><span>Add to Cart</span></a>
-                                </div>
-                            </div>
-                            <div class="product-content-4 product-content-sky title-font-width-400 text-center">
-                                <h3><a href="index.php?redirect=chitietsp&id_san_pham=">Dapibus ac mi shoes</a></h3>
-                                <div class="product-price product-price-red">
-                                    <span class="old-price">$49.00</span>
-                                    <span class="new-price">$42.00</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="custom-col-5">
-                        <div class="product-wrap mb-50">
-                            <div class="product-img default-overlay mb-25">
-                                <a href="index.php?redirect=chitietsp&id_san_pham=">
-                                    <img class="default-img" src="public/assets/images/product/product-34.jpg" alt="">
-                                </a>
-                                <div class="product-action product-action-sky product-action-position-1">
-                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="fa fa-eye"></i><span>Quick Shop</span></a>
-                                    <a title="Add to Wishlist" href="#"><i class="fa fa-heart"></i><span>Add to Wishlist</span></a>
-                                    <a class="icon-blod" title="Add to Compare" href="#"><i class="dlicon arrows-4_compare"></i><span>Add to Compare</span></a>
-                                    <a title="Add to Cart" href="#"><i class="fa fa-shopping-cart"></i><span>Add to Cart</span></a>
-                                </div>
-                            </div>
-                            <div class="product-content-4 product-content-sky title-font-width-400 text-center">
-                                <h3><a href="index.php?redirect=chitietsp&id_san_pham=">Dapibus ac mi shoes</a></h3>
-                                <div class="product-price product-price-red">
-                                    <span class="new-price">$42.00</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="custom-col-5">
-                        <div class="product-wrap mb-50">
-                            <div class="product-img default-overlay mb-25">
-                                <a href="index.php?redirect=chitietsp&id_san_pham=">
-                                    <img class="default-img" src="public/assets/images/product/product-35.jpg" alt="">
-                                    <span class="badge-red badge-right-20 badge-top-20 badge-width-height-2 badge-border-radius-100">sale!</span>
-                                </a>
-                                <div class="product-action product-action-sky product-action-position-1">
-                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="fa fa-eye"></i><span>Quick Shop</span></a>
-                                    <a title="Add to Wishlist" href="#"><i class="fa fa-heart"></i><span>Add to Wishlist</span></a>
-                                    <a class="icon-blod" title="Add to Compare" href="#"><i class="dlicon arrows-4_compare"></i><span>Add to Compare</span></a>
-                                    <a title="Add to Cart" href="#"><i class="fa fa-shopping-cart"></i><span>Add to Cart</span></a>
-                                </div>
-                            </div>
-                            <div class="product-content-4 product-content-sky title-font-width-400 text-center">
-                                <h3><a href="index.php?redirect=chitietsp&id_san_pham=">Dapibus ac mi shoes</a></h3>
-                                <div class="product-price product-price-red">
-                                    <span class="new-price">$42.00</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="custom-col-5">
-                        <div class="product-wrap mb-50">
-                            <div class="product-img default-overlay mb-25">
-                                <a href="index.php?redirect=chitietsp&id_san_pham=">
-                                    <img class="default-img" src="public/assets/images/product/product-36.jpg" alt="">
-                                </a>
-                                <div class="product-action product-action-sky product-action-position-1">
-                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="fa fa-eye"></i><span>Quick Shop</span></a>
-                                    <a title="Add to Wishlist" href="#"><i class="fa fa-heart"></i><span>Add to Wishlist</span></a>
-                                    <a class="icon-blod" title="Add to Compare" href="#"><i class="dlicon arrows-4_compare"></i><span>Add to Compare</span></a>
-                                    <a title="Add to Cart" href="#"><i class="fa fa-shopping-cart"></i><span>Add to Cart</span></a>
-                                </div>
-                            </div>
-                            <div class="product-content-4 product-content-sky title-font-width-400 text-center">
-                                <h3><a href="index.php?redirect=chitietsp&id_san_pham=">Dapibus ac mi shoes</a></h3>
-                                <div class="product-price product-price-red">
-                                    <span class="new-price">$42.00</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="custom-col-5">
-                        <div class="product-wrap mb-50">
-                            <div class="product-img default-overlay mb-25">
-                                <a href="index.php?redirect=chitietsp&id_san_pham=">
-                                    <img class="default-img" src="public/assets/images/product/product-37.jpg" alt="">
-                                    <span class="badge-black-before badge-right-0 badge-top-0 badge-pr badge-pt">-7.7%</span>
-                                </a>
-                                <div class="product-action product-action-sky product-action-position-1">
-                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="fa fa-eye"></i><span>Quick Shop</span></a>
-                                    <a title="Add to Wishlist" href="#"><i class="fa fa-heart"></i><span>Add to Wishlist</span></a>
-                                    <a class="icon-blod" title="Add to Compare" href="#"><i class="dlicon arrows-4_compare"></i><span>Add to Compare</span></a>
-                                    <a title="Add to Cart" href="#"><i class="fa fa-shopping-cart"></i><span>Add to Cart</span></a>
-                                </div>
-                            </div>
-                            <div class="product-content-4 product-content-sky title-font-width-400 text-center">
-                                <h3><a href="index.php?redirect=chitietsp&id_san_pham=">Dapibus ac mi shoes</a></h3>
-                                <div class="product-price product-price-red">
-                                    <span class="new-price">$42.00</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="custom-col-5">
-                        <div class="product-wrap mb-50">
-                            <div class="product-img default-overlay mb-25">
-                                <a href="index.php?redirect=chitietsp&id_san_pham=">
-                                    <img class="default-img" src="public/assets/images/product/product-38.jpg" alt="">
-                                </a>
-                                <div class="product-action product-action-sky product-action-position-1">
-                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="fa fa-eye"></i><span>Quick Shop</span></a>
-                                    <a title="Add to Wishlist" href="#"><i class="fa fa-heart"></i><span>Add to Wishlist</span></a>
-                                    <a class="icon-blod" title="Add to Compare" href="#"><i class="dlicon arrows-4_compare"></i><span>Add to Compare</span></a>
-                                    <a title="Add to Cart" href="#"><i class="fa fa-shopping-cart"></i><span>Add to Cart</span></a>
-                                </div>
-                            </div>
-                            <div class="product-content-4 product-content-sky title-font-width-400 text-center">
-                                <h3><a href="index.php?redirect=chitietsp&id_san_pham=">Mid – Augue et eleifend tincidunt</a></h3>
-                                <div class="product-price product-price-red">
-                                    <span class="new-price">$42.00</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="custom-col-5">
-                        <div class="product-wrap mb-50">
-                            <div class="product-img default-overlay mb-25">
-                                <a href="index.php?redirect=chitietsp&id_san_pham=">
-                                    <img class="default-img" src="public/assets/images/product/product-39.jpg" alt="">
-                                </a>
-                                <div class="product-action product-action-sky product-action-position-1">
-                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="fa fa-eye"></i><span>Quick Shop</span></a>
-                                    <a title="Add to Wishlist" href="#"><i class="fa fa-heart"></i><span>Add to Wishlist</span></a>
-                                    <a class="icon-blod" title="Add to Compare" href="#"><i class="dlicon arrows-4_compare"></i><span>Add to Compare</span></a>
-                                    <a title="Add to Cart" href="#"><i class="fa fa-shopping-cart"></i><span>Add to Cart</span></a>
-                                </div>
-                            </div>
-                            <div class="product-content-4 product-content-sky title-font-width-400 text-center">
-                                <h3><a href="index.php?redirect=chitietsp&id_san_pham=">Home sofa ante a elit</a></h3>
-                                <div class="product-price product-price-red">
-                                    <span class="new-price">$42.00</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="custom-col-5">
-                        <div class="product-wrap mb-50">
-                            <div class="product-img default-overlay mb-25">
-                                <a href="index.php?redirect=chitietsp&id_san_pham=">
-                                    <img class="default-img" src="public/assets/images/product/product-40.jpg" alt="">
-                                </a>
-                                <div class="product-action product-action-sky product-action-position-1">
-                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="fa fa-eye"></i><span>Quick Shop</span></a>
-                                    <a title="Add to Wishlist" href="#"><i class="fa fa-heart"></i><span>Add to Wishlist</span></a>
-                                    <a class="icon-blod" title="Add to Compare" href="#"><i class="dlicon arrows-4_compare"></i><span>Add to Compare</span></a>
-                                    <a title="Add to Cart" href="#"><i class="fa fa-shopping-cart"></i><span>Add to Cart</span></a>
-                                </div>
-                            </div>
-                            <div class="product-content-4 product-content-sky title-font-width-400 text-center">
-                                <h3><a href="index.php?redirect=chitietsp&id_san_pham=">Century sofa auctor iaculis</a></h3>
-                                <div class="product-price product-price-red">
-                                    <span class="new-price">$42.00</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="custom-col-5">
-                        <div class="product-wrap mb-50">
-                            <div class="product-img default-overlay mb-25">
-                                <a href="index.php?redirect=chitietsp&id_san_pham=">
-                                    <img class="default-img" src="public/assets/images/product/product-41.jpg" alt="">
-                                </a>
-                                <div class="product-action product-action-sky product-action-position-1">
-                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="fa fa-eye"></i><span>Quick Shop</span></a>
-                                    <a title="Add to Wishlist" href="#"><i class="fa fa-heart"></i><span>Add to Wishlist</span></a>
-                                    <a class="icon-blod" title="Add to Compare" href="#"><i class="dlicon arrows-4_compare"></i><span>Add to Compare</span></a>
-                                    <a title="Add to Cart" href="#"><i class="fa fa-shopping-cart"></i><span>Add to Cart</span></a>
-                                </div>
-                            </div>
-                            <div class="product-content-4 product-content-sky title-font-width-400 text-center">
-                                <h3><a href="index.php?redirect=chitietsp&id_san_pham=">Mid – Century Sofa</a></h3>
-                                <div class="product-price product-price-red">
-                                    <span class="new-price">$42.00</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <?php endforeach ?>
                 </div>
                 <div class="pro-view-all-3 text-center">
                     <a href="#">View all product</a>
@@ -323,15 +132,16 @@
         <div class="product-area section-padding-1 pt-130 pb-125">
             <div class="container-fluid">
                 <div class="section-title-12 text-center mb-65">
-                    <h2>Top Sale This Week</h2>
-                    <p>Class aptent taciti sociosqu ad litora torquent per con</p>
+                    <h2>Nhiều người chú ý</h2>
+                    <p>Những sản phẩm được nhiều người xem nhất</p>
                 </div>
                 <div class="row">
+                <?php foreach($san_pham_view_cao as $rows): ?>
                     <div class="custom-col-5">
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
-                                <a href="index.php?redirect=chitietsp&id_san_pham=">
-                                    <img class="default-img" src="public/assets/images/product/product-42.jpg" alt="">
+                                <a href="index.php?redirect=chitietsp&id_san_pham=<?=$rows['id_san_pham']?>">
+                                    <img class="img-fluid" style="height: 400px;" src="public/image/<?=$rows['anh_san_pham']?>" alt="">
                                 </a>
                                 <div class="product-action product-action-sky product-action-position-1">
                                     <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="fa fa-eye"></i><span>Quick Shop</span></a>
@@ -341,206 +151,14 @@
                                 </div>
                             </div>
                             <div class="product-content-4 product-content-sky title-font-width-400 text-center">
-                                <h3><a href="index.php?redirect=chitietsp&id_san_pham=">Dapibus ac mi shoes</a></h3>
+                                <h3><a href="index.php?redirect=chitietsp&id_san_pham="><?=$rows['ten_san_pham']?></a></h3>
                                 <div class="product-price product-price-red">
-                                    <span class="new-price">$42.00</span>
+                                    <span class="new-price"><?=number_format($rows['gia_tien'], 0 )?> <sup>vnđ</sup></span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="custom-col-5">
-                        <div class="product-wrap mb-50">
-                            <div class="product-img default-overlay mb-25">
-                                <a href="index.php?redirect=chitietsp&id_san_pham=">
-                                    <img class="default-img" src="public/assets/images/product/product-43.jpg" alt="">
-                                    <span class="badge-black-before badge-right-0 badge-top-0 badge-pr badge-pt">sale!</span>
-                                </a>
-                                <div class="product-action product-action-sky product-action-position-1">
-                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="fa fa-eye"></i><span>Quick Shop</span></a>
-                                    <a title="Add to Wishlist" href="#"><i class="fa fa-heart"></i><span>Add to Wishlist</span></a>
-                                    <a class="icon-blod" title="Add to Compare" href="#"><i class="dlicon arrows-4_compare"></i><span>Add to Compare</span></a>
-                                    <a title="Add to Cart" href="#"><i class="fa fa-shopping-cart"></i><span>Add to Cart</span></a>
-                                </div>
-                            </div>
-                            <div class="product-content-4 product-content-sky title-font-width-400 text-center">
-                                <h3><a href="index.php?redirect=chitietsp&id_san_pham=">Dapibus ac mi shoes</a></h3>
-                                <div class="product-price product-price-red">
-                                    <span class="old-price">$49.00</span>
-                                    <span class="new-price">$42.00</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="custom-col-5">
-                        <div class="product-wrap mb-50">
-                            <div class="product-img default-overlay mb-25">
-                                <a href="index.php?redirect=chitietsp&id_san_pham=">
-                                    <img class="default-img" src="public/assets/images/product/product-44.jpg" alt="">
-                                </a>
-                                <div class="product-action product-action-sky product-action-position-1">
-                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="fa fa-eye"></i><span>Quick Shop</span></a>
-                                    <a title="Add to Wishlist" href="#"><i class="fa fa-heart"></i><span>Add to Wishlist</span></a>
-                                    <a class="icon-blod" title="Add to Compare" href="#"><i class="dlicon arrows-4_compare"></i><span>Add to Compare</span></a>
-                                    <a title="Add to Cart" href="#"><i class="fa fa-shopping-cart"></i><span>Add to Cart</span></a>
-                                </div>
-                            </div>
-                            <div class="product-content-4 product-content-sky title-font-width-400 text-center">
-                                <h3><a href="index.php?redirect=chitietsp&id_san_pham=">Dapibus ac mi shoes</a></h3>
-                                <div class="product-price product-price-red">
-                                    <span class="new-price">$42.00</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="custom-col-5">
-                        <div class="product-wrap mb-50">
-                            <div class="product-img default-overlay mb-25">
-                                <a href="index.php?redirect=chitietsp&id_san_pham=">
-                                    <img class="default-img" src="public/assets/images/product/product-45.jpg" alt="">
-                                    <span class="badge-red badge-right-20 badge-top-20 badge-width-height-2 badge-border-radius-100">sale!</span>
-                                </a>
-                                <div class="product-action product-action-sky product-action-position-1">
-                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="fa fa-eye"></i><span>Quick Shop</span></a>
-                                    <a title="Add to Wishlist" href="#"><i class="fa fa-heart"></i><span>Add to Wishlist</span></a>
-                                    <a class="icon-blod" title="Add to Compare" href="#"><i class="dlicon arrows-4_compare"></i><span>Add to Compare</span></a>
-                                    <a title="Add to Cart" href="#"><i class="fa fa-shopping-cart"></i><span>Add to Cart</span></a>
-                                </div>
-                            </div>
-                            <div class="product-content-4 product-content-sky title-font-width-400 text-center">
-                                <h3><a href="index.php?redirect=chitietsp&id_san_pham=">Dapibus ac mi shoes</a></h3>
-                                <div class="product-price product-price-red">
-                                    <span class="new-price">$42.00</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="custom-col-5">
-                        <div class="product-wrap mb-50">
-                            <div class="product-img default-overlay mb-25">
-                                <a href="index.php?redirect=chitietsp&id_san_pham=">
-                                    <img class="default-img" src="public/assets/images/product/product-46.jpg" alt="">
-                                </a>
-                                <div class="product-action product-action-sky product-action-position-1">
-                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="fa fa-eye"></i><span>Quick Shop</span></a>
-                                    <a title="Add to Wishlist" href="#"><i class="fa fa-heart"></i><span>Add to Wishlist</span></a>
-                                    <a class="icon-blod" title="Add to Compare" href="#"><i class="dlicon arrows-4_compare"></i><span>Add to Compare</span></a>
-                                    <a title="Add to Cart" href="#"><i class="fa fa-shopping-cart"></i><span>Add to Cart</span></a>
-                                </div>
-                            </div>
-                            <div class="product-content-4 product-content-sky title-font-width-400 text-center">
-                                <h3><a href="index.php?redirect=chitietsp&id_san_pham=">Dapibus ac mi shoes</a></h3>
-                                <div class="product-price product-price-red">
-                                    <span class="new-price">$42.00</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="custom-col-5">
-                        <div class="product-wrap mb-50">
-                            <div class="product-img default-overlay mb-25">
-                                <a href="index.php?redirect=chitietsp&id_san_pham=">
-                                    <img class="default-img" src="public/assets/images/product/product-47.jpg" alt="">
-                                    <span class="badge-black-before badge-right-0 badge-top-0 badge-pr badge-pt">-7.7%</span>
-                                </a>
-                                <div class="product-action product-action-sky product-action-position-1">
-                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="fa fa-eye"></i><span>Quick Shop</span></a>
-                                    <a title="Add to Wishlist" href="#"><i class="fa fa-heart"></i><span>Add to Wishlist</span></a>
-                                    <a class="icon-blod" title="Add to Compare" href="#"><i class="dlicon arrows-4_compare"></i><span>Add to Compare</span></a>
-                                    <a title="Add to Cart" href="#"><i class="fa fa-shopping-cart"></i><span>Add to Cart</span></a>
-                                </div>
-                            </div>
-                            <div class="product-content-4 product-content-sky title-font-width-400 text-center">
-                                <h3><a href="index.php?redirect=chitietsp&id_san_pham=">Dapibus ac mi shoes</a></h3>
-                                <div class="product-price product-price-red">
-                                    <span class="new-price">$42.00</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="custom-col-5">
-                        <div class="product-wrap mb-50">
-                            <div class="product-img default-overlay mb-25">
-                                <a href="index.php?redirect=chitietsp&id_san_pham=">
-                                    <img class="default-img" src="public/assets/images/product/product-48.jpg" alt="">
-                                </a>
-                                <div class="product-action product-action-sky product-action-position-1">
-                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="fa fa-eye"></i><span>Quick Shop</span></a>
-                                    <a title="Add to Wishlist" href="#"><i class="fa fa-heart"></i><span>Add to Wishlist</span></a>
-                                    <a class="icon-blod" title="Add to Compare" href="#"><i class="dlicon arrows-4_compare"></i><span>Add to Compare</span></a>
-                                    <a title="Add to Cart" href="#"><i class="fa fa-shopping-cart"></i><span>Add to Cart</span></a>
-                                </div>
-                            </div>
-                            <div class="product-content-4 product-content-sky title-font-width-400 text-center">
-                                <h3><a href="index.php?redirect=chitietsp&id_san_pham=">Mid – Augue et eleifend tincidunt</a></h3>
-                                <div class="product-price product-price-red">
-                                    <span class="new-price">$42.00</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="custom-col-5">
-                        <div class="product-wrap mb-50">
-                            <div class="product-img default-overlay mb-25">
-                                <a href="index.php?redirect=chitietsp&id_san_pham=">
-                                    <img class="default-img" src="public/assets/images/product/product-49.jpg" alt="">
-                                </a>
-                                <div class="product-action product-action-sky product-action-position-1">
-                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="fa fa-eye"></i><span>Quick Shop</span></a>
-                                    <a title="Add to Wishlist" href="#"><i class="fa fa-heart"></i><span>Add to Wishlist</span></a>
-                                    <a class="icon-blod" title="Add to Compare" href="#"><i class="dlicon arrows-4_compare"></i><span>Add to Compare</span></a>
-                                    <a title="Add to Cart" href="#"><i class="fa fa-shopping-cart"></i><span>Add to Cart</span></a>
-                                </div>
-                            </div>
-                            <div class="product-content-4 product-content-sky title-font-width-400 text-center">
-                                <h3><a href="index.php?redirect=chitietsp&id_san_pham=">Home sofa ante a elit</a></h3>
-                                <div class="product-price product-price-red">
-                                    <span class="new-price">$42.00</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="custom-col-5">
-                        <div class="product-wrap mb-50">
-                            <div class="product-img default-overlay mb-25">
-                                <a href="index.php?redirect=chitietsp&id_san_pham=">
-                                    <img class="default-img" src="public/assets/images/product/product-50.jpg" alt="">
-                                </a>
-                                <div class="product-action product-action-sky product-action-position-1">
-                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="fa fa-eye"></i><span>Quick Shop</span></a>
-                                    <a title="Add to Wishlist" href="#"><i class="fa fa-heart"></i><span>Add to Wishlist</span></a>
-                                    <a class="icon-blod" title="Add to Compare" href="#"><i class="dlicon arrows-4_compare"></i><span>Add to Compare</span></a>
-                                    <a title="Add to Cart" href="#"><i class="fa fa-shopping-cart"></i><span>Add to Cart</span></a>
-                                </div>
-                            </div>
-                            <div class="product-content-4 product-content-sky title-font-width-400 text-center">
-                                <h3><a href="index.php?redirect=chitietsp&id_san_pham=">Century sofa auctor iaculis</a></h3>
-                                <div class="product-price product-price-red">
-                                    <span class="new-price">$42.00</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="custom-col-5">
-                        <div class="product-wrap mb-50">
-                            <div class="product-img default-overlay mb-25">
-                                <a href="index.php?redirect=chitietsp&id_san_pham=">
-                                    <img class="default-img" src="public/assets/images/product/product-51.jpg" alt="">
-                                </a>
-                                <div class="product-action product-action-sky product-action-position-1">
-                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="fa fa-eye"></i><span>Quick Shop</span></a>
-                                    <a title="Add to Wishlist" href="#"><i class="fa fa-heart"></i><span>Add to Wishlist</span></a>
-                                    <a class="icon-blod" title="Add to Compare" href="#"><i class="dlicon arrows-4_compare"></i><span>Add to Compare</span></a>
-                                    <a title="Add to Cart" href="#"><i class="fa fa-shopping-cart"></i><span>Add to Cart</span></a>
-                                </div>
-                            </div>
-                            <div class="product-content-4 product-content-sky title-font-width-400 text-center">
-                                <h3><a href="index.php?redirect=chitietsp&id_san_pham=">Mid – Century Sofa</a></h3>
-                                <div class="product-price product-price-red">
-                                    <span class="new-price">$42.00</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <?php endforeach ?>
                 </div>
                 <div class="pro-view-all-3 text-center">
                     <a href="#">View all product</a>
@@ -549,42 +167,19 @@
         </div>
         <div class="banner-area">
             <div class="banner-slider-active-3 owl-carousel">
-                <div class="single-banner-slider bg-img pt-180 pb-180" style="background-image:url(public/assets/images/banner/banner-25.jpg);">
-                    <div class="single-banner-slider-wrap">
-                        <div class="single-banner-slider-content slider-animated-1">
-                            <span>Popular Projects</span>
-                            <h3 class="slider-animated-1">Bed Room</h3>
-                            <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer condimentum sed mi</p>
-                            <div class="banner-slider-btn">
-                                <a href="#">DISCOVER</a>
+                <?php foreach($style_room as $row):?>    
+                    <div class="single-banner-slider bg-img pt-180 pb-180" style="background-image:url(public/image/<?=$row['hinh_anh']?>);">
+                        <div class="single-banner-slider-wrap">
+                            <div class="single-banner-slider-content slider-animated-1">
+                                <h3 class="slider-animated-1 custom-scrollbar" style="height:60px;overflow:auto;"><?=$row['ten_style']?></h3>
+                                <p class="slider-animated-1 custom-scrollbar" style="max-height:100px;overflow:auto;"><?=$row['mo_ta']?>...</p>
+                                <div class="banner-slider-btn">
+                                    <a href="#">ĐẶT LỊCH NGAY</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="single-banner-slider bg-img pt-180 pb-180" style="background-image:url(public/assets/images/banner/banner-26.jpg);">
-                    <div class="single-banner-slider-wrap">
-                        <div class="single-banner-slider-content slider-animated-1">
-                            <span>Popular Projects</span>
-                            <h3>Kitchen Decoration</h3>
-                            <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer condimentum sed mi</p>
-                            <div class="banner-slider-btn">
-                                <a href="#">DISCOVER</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="single-banner-slider bg-img pt-180 pb-180" style="background-image:url(public/assets/images/banner/banner-27.jpg);">
-                    <div class="single-banner-slider-wrap">
-                        <div class="single-banner-slider-content slider-animated-1">
-                            <span>Popular Projects</span>
-                            <h3>Beautiful Bathroom</h3>
-                            <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer condimentum sed mi</p>
-                            <div class="banner-slider-btn">
-                                <a href="#">DISCOVER</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <?php endforeach?>
             </div>
         </div>
         <div class="testimonial-area section-padding-1 pt-130 pb-125">

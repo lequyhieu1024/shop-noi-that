@@ -8,7 +8,7 @@
     <tr>
       <th scope="col">Tên Website</th>
       <th scope="col"><?=$ten_website?></th>
-      <th><a href="index.php?act=editws"><button class="btn btn-warning">Cập nhật thông tin website</button></a></th>
+      
     </tr>
   </thead>
   <tbody>
@@ -44,6 +44,11 @@
       <th scope="row">Rate Website</th>
       <td><?=$rate?></td>
     </tr>
+    <tr>
+      <th scope="row">Location</th>
+      <td><?=$location?></td>
+    </tr>
+    <tr><a href="index.php?act=editws"><button class="btn btn-warning">Cập nhật thông tin website</button></a></tr>
   </tbody>
 </table>
 <?php endforeach ?>

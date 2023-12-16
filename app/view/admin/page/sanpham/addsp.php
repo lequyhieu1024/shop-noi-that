@@ -53,5 +53,5 @@
         <input type="submit" required name="addsp" class="btn btn-primary" value="Thêm sản phẩm">
     </form>
     <h2 class="text-danger"><?= $alert ?></h2>
-    <a href="index.php?act=listdm"><button>Xem danh sách sản phẩm</button></a>
+    <a href="index.php?act=listsp"><button>Xem danh sách sản phẩm</button></a>
 </div>

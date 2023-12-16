@@ -40,9 +40,10 @@
                 $phone_website = $_POST['phone_website'];
                 $email_website = $_POST['email_website'];
                 $rate = $_POST['rate'];
+                $location = $_POST['location'];
                 
                 editws($ten_website,$banner_website,$dia_chi_website,$email_website,$phone_website,$logo_website,$title_website,
-                $favicon_website,$rate);
+                $favicon_website,$rate,$location);
                 
                 echo '<script>alert("Cập nhật thành công")</script>';
                 echo '<script>window.location.href = "index.php?act=listws"</script>';

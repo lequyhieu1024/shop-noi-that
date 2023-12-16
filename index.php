@@ -3,6 +3,7 @@
     include "config.php";
     include "app/model/clientModel/taiKhoanModel.php";
     include "app/model/clientModel/danhMucModel.php";
+    include "app/model/clientModel/sanPhamModel.php";
     include "app/model/clientModel/websiteModel.php";
     include "app/model/clientModel/thuongHieuModel.php";
     include "app/model/clientModel/styleRoomModel.php";

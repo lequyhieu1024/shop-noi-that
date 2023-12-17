@@ -22,6 +22,10 @@
             <input type="number" class="form-control" required name="so_luong" placeholder="Tổng số lượng đang có" aria-describedby="basic-addon1">
         </div>
         <div class="col-md-8 input-group mb-3">
+            <label class="input-group-text input-group-prepend" id="basic-addon1">Kích thước</label>
+            <input type="text" class="form-control" required name="kich_thuoc" placeholder="Dài x Rộng x Cao (đơn vị Cen-ti-met). VD: 20x30x50 cm" aria-describedby="basic-addon1">
+        </div>
+        <div class="col-md-8 input-group mb-3">
             <div class="input-group-prepend">
                 <label class="input-group-text">Thuộc về danh mục</label>
             </div>

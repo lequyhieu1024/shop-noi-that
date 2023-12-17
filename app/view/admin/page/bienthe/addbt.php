@@ -23,10 +23,6 @@
                     <input type="number" class="form-control" required name="gia_tien_bien_the" placeholder="Giá biến thể" aria-describedby="basic-addon1">
                 </div>
                 <div class="input-group mb-3">
-                    <label class="input-group-text input-group-prepend" id="basic-addon1">Kích thước</label>
-                    <input type="text" class="form-control" required name="kich_thuoc_bien_the" placeholder="Dài x Rộng x Cao (đơn vị Cen-ti-met). VD: 20x30x50 cm" aria-describedby="basic-addon1">
-                </div>
-                <div class="input-group mb-3">
                     <label class="input-group-text input-group-prepend" id="basic-addon1">Số lượng</label>
                     <input type="number" class="form-control" required name="so_luong_bien_the" placeholder="Số lượng đang có" aria-describedby="basic-addon1">
                 </div>

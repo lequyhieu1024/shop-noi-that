@@ -30,13 +30,14 @@
                 }
                 $mo_ta = $_POST['mo_ta'];
                 $gia_tien = $_POST['gia_tien'];
+                $kich_thuoc = $_POST['kich_thuoc'];
                 $so_luong = $_POST['so_luong'];
                 $id_danh_muc = $_POST['id_danh_muc'];
                 $id_thuong_hieu = $_POST['id_thuong_hieu'];
                 $show_san_pham = $_POST['show_san_pham'];
                 
                 addsp($ten_san_pham,$anh_san_pham,$mo_ta,
-                $gia_tien,$so_luong,$id_danh_muc,$id_thuong_hieu,$show_san_pham);
+                $gia_tien,$so_luong,$kich_thuoc,$id_danh_muc,$id_thuong_hieu,$show_san_pham);
                 $alert = "Thêm sản phẩm thành công";
             }
             include "page/sanpham/addsp.php";
@@ -59,12 +60,13 @@
                 }
                 $mo_ta = $_POST['mo_ta'];
                 $gia_tien = $_POST['gia_tien'];
+                $kich_thuoc = $_POST['kich_thuoc'];
                 $so_luong = $_POST['so_luong'];
                 $id_danh_muc = $_POST['id_danh_muc'];
                 $id_thuong_hieu = $_POST['id_thuong_hieu'];
                 $show_san_pham = $_POST['show_san_pham'];
                 
-                editsp($id_san_pham,$ten_san_pham,$anh_san_pham,$mo_ta,$gia_tien,$so_luong,$so_luot_thich,
+                editsp($id_san_pham,$ten_san_pham,$anh_san_pham,$mo_ta,$gia_tien,$so_luong,$kich_thuoc,$so_luot_thich,
                 $so_luot_xem,$id_danh_muc,$id_thuong_hieu,$show_san_pham);
                 
                 echo '<script>alert("Cập nhật thành công")</script>';

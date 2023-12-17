@@ -19,10 +19,6 @@ Chi tiết sản phẩm
             <input type="number" class="form-control" required value="<?=$rows['gia_tien_bien_the']?>" name="gia_tien_bien_the" placeholder="Giá biến thể" aria-describedby="basic-addon1">
         </div>
         <div class="input-group mb-3">
-            <label class="input-group-text input-group-prepend" id="basic-addon1">Kích thước</label>
-            <input type="text" class="form-control" required value="<?=$rows['kich_thuoc_bien_the']?>" name="kich_thuoc_bien_the" placeholder="Kích thước đang có" aria-describedby="basic-addon1">
-        </div>
-        <div class="input-group mb-3">
             <label class="input-group-text input-group-prepend" id="basic-addon1">Số lượng</label>
             <input type="number" class="form-control" required value="<?=$rows['so_luong_bien_the']?>" name="so_luong_bien_the" placeholder="Số lượng đang có" aria-describedby="basic-addon1">
         </div>

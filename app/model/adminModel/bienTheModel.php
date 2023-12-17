@@ -1,7 +1,7 @@
 <?php
-    function addbt($mau_sac_bien_the,$anh_bien_the,$gia_tien_bien_the,$kich_thuoc_bien_the,$so_luong_bien_the,$id_san_pham){
-        $sql ="INSERT INTO bien_the(mau_sac_bien_the, anh_bien_the, gia_tien_bien_the, kich_thuoc_bien_the, so_luong_bien_the, id_san_pham) 
-        VALUES ('$mau_sac_bien_the','$anh_bien_the','$gia_tien_bien_the','$kich_thuoc_bien_the','$so_luong_bien_the','$id_san_pham')";
+    function addbt($mau_sac_bien_the,$anh_bien_the,$gia_tien_bien_the,$so_luong_bien_the,$id_san_pham){
+        $sql ="INSERT INTO bien_the(mau_sac_bien_the, anh_bien_the, gia_tien_bien_the, so_luong_bien_the, id_san_pham) 
+        VALUES ('$mau_sac_bien_the','$anh_bien_the','$gia_tien_bien_the','$so_luong_bien_the','$id_san_pham')";
         pdo_execute($sql);
     }
     function load_all_bien_the($id_san_pham){
@@ -17,14 +17,14 @@
         $result = pdo_query($sql);
         return $result;
     }
-    function editbt($id_bien_the,$mau_sac_bien_the,$anh_bien_the,$gia_tien_bien_the,$kich_thuoc_bien_the,$so_luong_bien_the){
+    function editbt($id_bien_the,$mau_sac_bien_the,$anh_bien_the,$gia_tien_bien_the,$so_luong_bien_the){
         if($anh_bien_the != ""){
             $sql = "UPDATE bien_the SET mau_sac_bien_the='$mau_sac_bien_the',
-            anh_bien_the='$anh_bien_the',gia_tien_bien_the='$gia_tien_bien_the',kich_thuoc_bien_the='$kich_thuoc_bien_the',
+            anh_bien_the='$anh_bien_the',gia_tien_bien_the='$gia_tien_bien_the',
             so_luong_bien_the='$so_luong_bien_the' WHERE id_bien_the = $id_bien_the";
         }else{
             $sql = "UPDATE bien_the SET mau_sac_bien_the='$mau_sac_bien_the',
-            anh_bien_the='$anh_bien_the',gia_tien_bien_the='$gia_tien_bien_the',kich_thuoc_bien_the='$kich_thuoc_bien_the',
+            gia_tien_bien_the='$gia_tien_bien_the',
             so_luong_bien_the='$so_luong_bien_the' WHERE id_bien_the = $id_bien_the";
         }
         pdo_execute($sql);

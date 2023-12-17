@@ -11,10 +11,9 @@
                 $anh_bien_the ="";
             }
             $gia_tien_bien_the = $_POST['gia_tien_bien_the'];
-            $kich_thuoc_bien_the = $_POST['kich_thuoc_bien_the'];
             $so_luong_bien_the = $_POST['so_luong_bien_the'];
             $id_san_pham = $_POST['id_san_pham'];
-            addbt($mau_sac_bien_the,$anh_bien_the,$gia_tien_bien_the,$kich_thuoc_bien_the,$so_luong_bien_the,$id_san_pham);
+            addbt($mau_sac_bien_the,$anh_bien_the,$gia_tien_bien_the,$so_luong_bien_the,$id_san_pham);
             echo '<script>alert("Thêm thành công")</script>';
             echo '<script>window.location.href="index.php?act=chitietsp&id=' . $id_san_pham . '";</script>';
             break;
@@ -33,10 +32,9 @@
                     $anh_bien_the ="";
                 }
                 $gia_tien_bien_the = $_POST['gia_tien_bien_the'];
-                $kich_thuoc_bien_the = $_POST['mau_sac_bien_the'];
                 $so_luong_bien_the = $_POST['so_luong_bien_the'];
                 $id_san_pham = $_POST['id_san_pham'];
-                editbt($id_bien_the,$mau_sac_bien_the,$anh_bien_the,$gia_tien_bien_the,$kich_thuoc_bien_the,$so_luong_bien_the);
+                editbt($id_bien_the,$mau_sac_bien_the,$anh_bien_the,$gia_tien_bien_the,$so_luong_bien_the);
                 echo '<script>alert("Cập nhật thành công")</script>';
                 echo '<script>window.location.href = "index.php?act=chitietsp&id='. $id_san_pham.'";</script>';
             }

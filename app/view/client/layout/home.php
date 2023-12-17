@@ -9,7 +9,7 @@
                                 <div class="main-slider-content-11-1 text-center">
                                     <h1 class="animated">Scandinavian interior </h1>
                                     <div class="slider-btn-2 slider-btn-2-border-white">
-                                        <a class="animated" href="index.php?redirect=chitietsp&id_san_pham=">SHOP NOW </a>
+                                        <a class="animated" href="index.php?redirect=chitietsp&id=">SHOP NOW </a>
                                     </div>
                                 </div>
                             </div>
@@ -21,7 +21,7 @@
                                 <div class="main-slider-content-11-1 text-center">
                                     <h1 class="animated">Scandinavian interior </h1>
                                     <div class="slider-btn-2 slider-btn-2-border-white">
-                                        <a class="animated" href="index.php?redirect=chitietsp&id_san_pham=">SHOP NOW </a>
+                                        <a class="animated" href="index.php?redirect=chitietsp&id=">SHOP NOW </a>
                                     </div>
                                 </div>
                             </div>
@@ -40,10 +40,10 @@
                     <?php foreach($style_room as $rows): ?>
                         <div class="banner-wrap default-overlay-2 banner-zoom mb-30">
                             <div class="banner-img">
-                                <a href="index.php?redirect=chitietsp&id_san_pham="><img class="img-fluid" style="height:200px" src="public/image/<?=$rows['hinh_anh'] ?>" alt="banner"></a>
+                                <a href="index.php?redirect=chitietsp&id="><img class="img-fluid" style="height:200px" src="public/image/<?=$rows['hinh_anh'] ?>" alt="banner"></a>
                             </div>
                             <div class="banner-content-11 text-center">
-                                <h3><a href="index.php?redirect=chitietsp&id_san_pham="><?=$rows['ten_style']?></a></h3>
+                                <h3><a href="index.php?redirect=chitietsp&id="><?=$rows['ten_style']?></a></h3>
                             </div>
                         </div>
                     <?php endforeach ?>
@@ -61,7 +61,7 @@
                     <div class="custom-col-5">
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
-                                <a href="index.php?redirect=chitietsp&id_san_pham=<?=$rows['id_san_pham']?>">
+                                <a href="index.php?redirect=chitietsp&id=<?=$rows['id_san_pham']?>">
                                     <img class="img-fluid" style="height: 400px;" src="public/image/<?=$rows['anh_san_pham']?>" alt="">
                                 </a>
                                 <div class="product-action product-action-sky product-action-position-1">
@@ -72,7 +72,7 @@
                                 </div>
                             </div>
                             <div class="product-content-4 product-content-sky title-font-width-400 text-center">
-                                <h3><a href="index.php?redirect=chitietsp&id_san_pham="><?=$rows['ten_san_pham']?></a></h3>
+                                <h3><a href="index.php?redirect=chitietsp&id="><?=$rows['ten_san_pham']?></a></h3>
                                 <div class="product-price product-price-red">
                                     <span class="new-price"><?=number_format($rows['gia_tien'], 0 )?> <sup>vnđ</sup></span>
                                 </div>
@@ -140,7 +140,7 @@
                     <div class="custom-col-5">
                         <div class="product-wrap mb-50">
                             <div class="product-img default-overlay mb-25">
-                                <a href="index.php?redirect=chitietsp&id_san_pham=<?=$rows['id_san_pham']?>">
+                                <a href="index.php?redirect=chitietsp&id=<?=$rows['id_san_pham']?>">
                                     <img class="img-fluid" style="height: 400px;" src="public/image/<?=$rows['anh_san_pham']?>" alt="">
                                 </a>
                                 <div class="product-action product-action-sky product-action-position-1">
@@ -151,7 +151,7 @@
                                 </div>
                             </div>
                             <div class="product-content-4 product-content-sky title-font-width-400 text-center">
-                                <h3><a href="index.php?redirect=chitietsp&id_san_pham="><?=$rows['ten_san_pham']?></a></h3>
+                                <h3><a href="index.php?redirect=chitietsp&id="><?=$rows['ten_san_pham']?></a></h3>
                                 <div class="product-price product-price-red">
                                     <span class="new-price"><?=number_format($rows['gia_tien'], 0 )?> <sup>vnđ</sup></span>
                                 </div>

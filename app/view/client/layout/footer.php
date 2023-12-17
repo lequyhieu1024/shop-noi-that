@@ -160,6 +160,7 @@
 <script src="public/assets/js/plugins/bpopup.js"></script>
 <script src="public/assets/js/plugins/wow.js"></script>
 <script src="public/assets/js/plugins/ajax-mail.js"></script>
+<script src="public/assets/js/button-color-variant.js"></script>
 <!-- Main JS -->
 <script src="public/assets/js/main.js"></script>
 </body>

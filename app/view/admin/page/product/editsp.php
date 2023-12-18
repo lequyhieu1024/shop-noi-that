@@ -38,8 +38,8 @@ foreach ($load_one_sp as $rows) :
                 <label class="input-group-text">Thuộc về danh mục</label>
             </div>
             <select class="custom-select" required name="id_danh_muc" id="inputGroupSelect01">
-                <?php foreach($listdm as $row):?>
-                <option value="<?= $row['id_danh_muc']?>" <?= ($rows['id_danh_muc'] == $id_danh_muc) ? 'selected' : '' ?> ><?= $row['ten_danh_muc'] ?></option>
+                <?php foreach($listdm as $rows):?>
+                <option value="<?= $rows['id_danh_muc']?>" <?= ($rows['id_danh_muc'] == $id_danh_muc) ? 'selected' : '' ?> ><?= $rows['ten_danh_muc'] ?></option>
                 <?php endforeach ?>
             </select>
         </div>

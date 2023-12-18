@@ -68,12 +68,12 @@ foreach ($load_one_sp as $rows) :
 
 <!-- FORM BIẾN THỂ -->
 
-<?php include "page/bienthe/addbt.php"; ?>
+<?php include "page/variant/addbt.php"; ?>
 <?php endforeach ?> 
 <!-- DANH SÁCH BIẾN THỂ -->
 
 <?php 
     if(!empty($load_all_bien_the)){
-        include "page/bienthe/listbt.php";
+        include "page/variant/listbt.php";
     }
 ?>

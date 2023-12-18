@@ -17,6 +17,7 @@
         $redirect = $_GET['redirect'];
         include "app/controller/clientController/taiKhoanController.php";
         include "app/controller/clientController/sanPhamController.php";
+        include "app/controller/clientController/checkOutController.php";
     }else{
         include "app/view/client/layout/home.php";
     }

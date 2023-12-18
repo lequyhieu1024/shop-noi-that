@@ -38,7 +38,7 @@
                 echo '<script>alert("Cập nhật thành công")</script>';
                 echo '<script>window.location.href = "index.php?act=chitietsp&id='. $id_san_pham.'";</script>';
             }
-            include "page/bienthe/editbt.php";
+            include "page/variant/editbt.php";
             break;
 
         case 'deletebt':

@@ -313,6 +313,29 @@
             <a href="#" class="nav-link bg-secondary">
               <i class="nav-icon"></i>
               <p>
+                Bài viết
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="index.php?act=listpost" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Danh sách </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="index.php?act=addpost" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Thêm bài viết</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link bg-secondary">
+              <i class="nav-icon"></i>
+              <p>
                 Đánh giá
               </p>
             </a>

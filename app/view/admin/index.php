@@ -12,7 +12,7 @@ if(isset($_SESSION['id_role'])){
         include("../../model/AdminModel/footerModel.php");
         include("../../model/AdminModel/navbarModel.php");
         include("../../model/AdminModel/bienTheModel.php");
-        // include("../../models/AdminModel/lotrinhhoc.php");
+        include("../../model/AdminModel/postModel.php");
         // include("../../models/AdminModel/lotrinhkhoahoc.php");
         
         include("layout/header.php");
@@ -28,6 +28,7 @@ if(isset($_SESSION['id_role'])){
                         include "../../controller/adminController/footerController.php";
                         include "../../controller/adminController/contentFooterController.php";
                         include "../../controller/adminController/navbarController.php";
+                        include "../../controller/adminController/postController.php";
                 }else{
                         // include "../../view/admin/layout/home.php";
                 }

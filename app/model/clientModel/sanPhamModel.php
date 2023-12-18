@@ -40,15 +40,6 @@
         $result = pdo_query($sql);
         return $result;
     }
-    function load_newest_product_limit5(){
-        $sql = "SELECT * 
-        FROM san_pham 
-        WHERE show_san_pham = 1 
-        ORDER BY id_san_pham DESC 
-        LIMIT 5";
-        $result = pdo_query($sql);
-        return $result;
-    }
     function load_all_bien_the($id_san_pham){
         $sql = "SELECT * FROM san_pham 
         JOIN bien_the ON bien_the.id_san_pham = san_pham.id_san_pham
@@ -56,3 +47,12 @@
         $result = pdo_query($sql);
         return $result;
     }
+    function load_newest_product($id_san_pham){
+        $sql = "SELECT * 
+        FROM san_pham 
+        WHERE show_san_pham = 1 AND id_san_pham != $id_san_pham
+        ORDER BY id_san_pham DESC";
+        $result = pdo_query($sql);
+        return $result;
+    }
+    

@@ -1,4 +1,20 @@
-<hr>
+
+<div class="breadcrumb-area section-padding-1 bg-gray breadcrumb-ptb-1">
+    <div class="container-fluid">
+        <div class="breadcrumb-content text-center">
+            <div class="breadcrumb-title">
+                <h2>Chi tiết sản phẩm</h2>
+            </div>
+            <ul>
+                <li>
+                    <a href="index.php">Trang chủ</a>
+                </li>
+                <li><span> &gt; </span></li>
+                <li class="active"> Chi tiết sản phẩm </li>
+            </ul>
+        </div>
+    </div>
+</div>
 <?php foreach ($detail_pro as $row) : endforeach ?>
 
 <div class="product-details-area section-padding-1 pb-90">
@@ -86,7 +102,7 @@
                                     </div>
                                 </div>
                                 <div class="product-details-cart">
-                                    <a title="Add to cart" href="#">Add to cart</a>
+                                    <a title="Add to cart" href="index.php?redirect=checkout">Add to cart</a>
                                 </div>
                                 <div class="product-details-wishlist">
                                     <a title="Add to wishlist" href="#"><i class="fa fa-heart"></i></a>
@@ -157,36 +173,48 @@
             <div class="col-lg-12 col-md-12">
                 <div class="description-review-wrapper">
                     <div class="description-review-topbar nav">
-                        <a class="active" data-bs-toggle="tab" href="#des-details1">Description</a>
-                        <a data-bs-toggle="tab" href="#des-details2">Additional information</a>
-                        <a data-bs-toggle="tab" href="#des-details3">Reviews (1)</a>
-                        <a data-bs-toggle="tab" href="#des-details4"> Brands</a>
-                        <a data-bs-toggle="tab" href="#des-details5">Shipping & Delivery</a>
+                        <a class="active" data-bs-toggle="tab" href="#des-details1">Mô tả</a>
+                        <a data-bs-toggle="tab" href="#des-details3">Đánh giá (1)</a>
+                        <a data-bs-toggle="tab" href="#des-details4"> Thương hiệu</a>
+                        <a data-bs-toggle="tab" href="#des-details5">Bài viết</a>
                     </div>
                     <div class="tab-content description-review-bottom">
                         <div id="des-details1" class="tab-pane active">
                             <div class="product-description-wrapper">
                                 <div class="row">
-                                    <div class="product-dec-col-38">
+                                    <!-- <div class="product-dec-col-38">
                                         <div class="pro-details-banner">
                                             <a class="video-popup" href="https://player.vimeo.com/video/181061053?autoplay=1&amp;byline=0&amp;collections=0"><img src="public/assets/images/product-details/pro-details-banner.jpg" alt=""></a>
                                         </div>
-                                    </div>
-                                    <div class="product-dec-col-62">
+                                    </div> -->
+                                    <div class="product-dec-col-11">
                                         <div class="product-dec-content">
-                                            <p><?= $row['mo_ta'] ?></p>
+                                            <!-- <p><?= $row['mo_ta'] ?></p> -->
                                             <ul>
                                                 <li><?= $row['mo_ta'] ?></li>
-                                                <li><?= $row['mo_ta'] ?></li>
+                                                <!-- <li><?= $row['mo_ta'] ?></li> -->
                                             </ul>
-                                            <p><?= $row['mo_ta'] ?></p>
+                                            <!-- <p><?= $row['mo_ta'] ?></p> -->
+                                        </div>
+                                        <div class="additional-info product-dec-content">
+                                            <ul>
+                                                <li><span>Kích thước</span> <?= ' - ' . $row['kich_thuoc'] ?> cm</li>
+                                                <li><span>Thương hiệu</span><?= ' - ' . $row['ten_thuong_hieu'] ?></li>
+                                                <li><span>Màu sắc</span>
+                                                    <?php if (!empty($variant_pro)) {
+                                                        foreach ($variant_pro as $rows) :
+                                                            echo ' - ' . $rows['mau_sac_bien_the'];
+                                                        endforeach;
+                                                    } else {
+                                                        echo '- Mặc định';
+                                                    } ?>
+                                                </li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div id="des-details2" class="tab-pane">
-                            <div class="additional-info">
+                            <!-- <div class="additional-info">
                                 <ul>
                                     <li><span>Kích thước</span> <?= ' - ' . $row['kich_thuoc'] ?> cm</li>
                                     <li><span>Thương hiệu</span><?= ' - ' . $row['ten_thuong_hieu'] ?></li>
@@ -200,7 +228,7 @@
                                         } ?>
                                     </li>
                                 </ul>
-                            </div>
+                            </div> -->
                         </div>
                         <div id="des-details3" class="tab-pane ">
                             <div class="review-wrapper">
@@ -296,12 +324,12 @@
                                         <div class="row align-items-center">
                                             <div class="col-lg-4 col-md-6 col-sm-5">
                                                 <div class="pro-dec-brand-img text-center">
-                                                    <img src="public/assets/images/brand-logo/brand-logo-7.png" alt="">
+                                                    <img src="public/image/<?= $row['anh_thuong_hieu'] ?>" alt="">
                                                 </div>
                                             </div>
                                             <div class="col-lg-8 col-md-6 col-sm-7">
                                                 <div class="pro-dec-brand-content">
-                                                    <p>Donec accumsan auctor iaculis. Sed suscipit arcu ligula, at egestas magna molestie a. Proin ac ex maximus, ultrices justo eget, sodales orci. Aliquam egestas libero ac turpis pharetra, in vehicula lacus scelerisque. Vestibulum ut sem laoreet, feugiat tellus at, hendrerit arcu..</p>
+                                                    <p><?= $row['ten_thuong_hieu'] ?></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -326,258 +354,60 @@
 <div class="related-product-area section-padding-1 pb-95">
     <div class="container-fluid">
         <div class="section-title-6 mb-50">
-            <h2>You may also like</h2>
+            <h2>Có thể bạn sẽ thích</h2>
         </div>
         <div class="related-product-active owl-carousel">
+            <?php foreach($newest_pro as $row): ?>
             <div class="product-wrap">
                 <div class="product-img default-overlay mb-25">
-                    <a href="index.php?redirect=chitietsp&id_san_pham=">
-                        <img class="default-img" src="public/assets/images/product/product-3.jpg" alt="">
-                        <img class="hover-img" src="public/assets/images/product/product-3-2.jpg" alt="">
+                    <a href="index.php?redirect=chitietsp&id=<?=$row['id_san_pham']?>">
+                        <img class="default-img" src="public/image/<?=$row['anh_san_pham']?>" alt="">
+                        <!-- <img class="hover-img" src="public/assets/images/product/product-3-2.jpg" alt=""> -->
                     </a>
                     <div class="product-action product-action-position-1">
                         <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="fa fa-eye"></i><span>Quick Shop</span></a>
                         <a title="Add to Wishlist" href="#"><i class="fa fa-heart"></i><span>Add to Wishlist</span></a>
-                        <a class="icon-blod" title="Add to Compare" href="#"><i class="dlicon arrows-4_compare"></i><span>Add to Compare</span></a>
                         <a title="Add to Cart" href="#"><i class="fa fa-shopping-cart"></i><span>Add to Cart</span></a>
                     </div>
                 </div>
                 <div class="product-content-2 title-font-width-400 text-center">
-                    <h3><a href="index.php?redirect=chitietsp&id_san_pham=">Fashion sneaker winter</a></h3>
+                    <h3><a href="index.php?redirect=chitietsp&id="><?=$row['ten_san_pham']?></a></h3>
                     <div class="product-price">
-                        <span class="new-price">$28.00</span>
+                        <span class="new-price text-danger"><?=number_format($row['gia_tien'],0)?> <sup>vnđ</sup></span>
                     </div>
                 </div>
             </div>
-            <div class="product-wrap">
-                <div class="product-img default-overlay mb-25">
-                    <a href="index.php?redirect=chitietsp&id_san_pham=">
-                        <img class="default-img" src="public/assets/images/product/product-4.jpg" alt="">
-                        <img class="hover-img" src="public/assets/images/product/product-4-2.jpg" alt="">
-                    </a>
-                    <div class="product-action product-action-position-1">
-                        <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="fa fa-eye"></i><span>Quick Shop</span></a>
-                        <a title="Add to Wishlist" href="#"><i class="fa fa-heart"></i><span>Add to Wishlist</span></a>
-                        <a class="icon-blod" title="Add to Compare" href="#"><i class="dlicon arrows-4_compare"></i><span>Add to Compare</span></a>
-                        <a title="Add to Cart" href="#"><i class="fa fa-shopping-cart"></i><span>Add to Cart</span></a>
-                    </div>
-                </div>
-                <div class="product-content-2 title-font-width-400 text-center">
-                    <h3><a href="index.php?redirect=chitietsp&id_san_pham=">News strappy sandals</a></h3>
-                    <div class="product-price">
-                        <span class="new-price">$26.00</span>
-                    </div>
-                </div>
-            </div>
-            <div class="product-wrap">
-                <div class="product-img default-overlay mb-25">
-                    <a href="index.php?redirect=chitietsp&id_san_pham=">
-                        <img class="default-img" src="public/assets/images/product/product-1.jpg" alt="">
-                        <img class="hover-img" src="public/assets/images/product/product-1-2.jpg" alt="">
-                    </a>
-                    <div class="product-action product-action-position-1">
-                        <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="fa fa-eye"></i><span>Quick Shop</span></a>
-                        <a title="Add to Wishlist" href="#"><i class="fa fa-heart"></i><span>Add to Wishlist</span></a>
-                        <a class="icon-blod" title="Add to Compare" href="#"><i class="dlicon arrows-4_compare"></i><span>Add to Compare</span></a>
-                        <a title="Add to Cart" href="#"><i class="fa fa-shopping-cart"></i><span>Add to Cart</span></a>
-                    </div>
-                </div>
-                <div class="product-content-2 title-font-width-400 text-center">
-                    <h3><a href="index.php?redirect=chitietsp&id_san_pham=">Check bermuda shorts</a></h3>
-                    <div class="product-price">
-                        <span class="new-price">$39.00</span>
-                    </div>
-                </div>
-            </div>
-            <div class="product-wrap">
-                <div class="product-img default-overlay mb-25">
-                    <a href="index.php?redirect=chitietsp&id_san_pham=">
-                        <img class="default-img" src="public/assets/images/product/product-5.jpg" alt="">
-                        <img class="hover-img" src="public/assets/images/product/product-5-2.jpg" alt="">
-                    </a>
-                    <div class="product-action product-action-position-1">
-                        <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="fa fa-eye"></i><span>Quick Shop</span></a>
-                        <a title="Add to Wishlist" href="#"><i class="fa fa-heart"></i><span>Add to Wishlist</span></a>
-                        <a class="icon-blod" title="Add to Compare" href="#"><i class="dlicon arrows-4_compare"></i><span>Add to Compare</span></a>
-                        <a title="Add to Cart" href="#"><i class="fa fa-shopping-cart"></i><span>Add to Cart</span></a>
-                    </div>
-                </div>
-                <div class="product-content-2 title-font-width-400 text-center">
-                    <h3><a href="index.php?redirect=chitietsp&id_san_pham=">Down puffer coat collar</a></h3>
-                    <div class="product-price">
-                        <span class="new-price">$55.00</span>
-                    </div>
-                </div>
-            </div>
-            <div class="product-wrap">
-                <div class="product-img default-overlay mb-25">
-                    <a href="index.php?redirect=chitietsp&id_san_pham=">
-                        <img class="default-img" src="public/assets/images/product/product-6.jpg" alt="">
-                        <img class="hover-img" src="public/assets/images/product/product-6-2.jpg" alt="">
-                    </a>
-                    <div class="product-action product-action-position-1">
-                        <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="fa fa-eye"></i><span>Quick Shop</span></a>
-                        <a title="Add to Wishlist" href="#"><i class="fa fa-heart"></i><span>Add to Wishlist</span></a>
-                        <a class="icon-blod" title="Add to Compare" href="#"><i class="dlicon arrows-4_compare"></i><span>Add to Compare</span></a>
-                        <a title="Add to Cart" href="#"><i class="fa fa-shopping-cart"></i><span>Add to Cart</span></a>
-                    </div>
-                </div>
-                <div class="product-content-2 title-font-width-400 text-center">
-                    <h3><a href="index.php?redirect=chitietsp&id_san_pham=">Bejewelled velvet sandals</a></h3>
-                    <div class="product-price">
-                        <span class="new-price">$49.00</span>
-                    </div>
-                </div>
-            </div>
-            <div class="product-wrap">
-                <div class="product-img default-overlay mb-25">
-                    <a href="index.php?redirect=chitietsp&id_san_pham=">
-                        <img class="default-img" src="public/assets/images/product/product-4.jpg" alt="">
-                        <img class="hover-img" src="public/assets/images/product/product-4-2.jpg" alt="">
-                    </a>
-                    <div class="product-action product-action-position-1">
-                        <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="fa fa-eye"></i><span>Quick Shop</span></a>
-                        <a title="Add to Wishlist" href="#"><i class="fa fa-heart"></i><span>Add to Wishlist</span></a>
-                        <a class="icon-blod" title="Add to Compare" href="#"><i class="dlicon arrows-4_compare"></i><span>Add to Compare</span></a>
-                        <a title="Add to Cart" href="#"><i class="fa fa-shopping-cart"></i><span>Add to Cart</span></a>
-                    </div>
-                </div>
-                <div class="product-content-2 title-font-width-400 text-center">
-                    <h3><a href="index.php?redirect=chitietsp&id_san_pham=">News strappy sandals</a></h3>
-                    <div class="product-price">
-                        <span class="new-price">$26.00</span>
-                    </div>
-                </div>
-            </div>
+            <?php endforeach ?>
         </div>
     </div>
 </div>
 <div class="related-product-area section-padding-1 pb-95">
     <div class="container-fluid">
         <div class="section-title-6 mb-50">
-            <h2>Related Products</h2>
+            <h2>Sản phẩm liên quan</h2>
         </div>
         <div class="related-product-active owl-carousel">
+            <?php foreach($related_pro as $row): ?>
             <div class="product-wrap">
                 <div class="product-img default-overlay mb-25">
-                    <a href="index.php?redirect=chitietsp&id_san_pham=">
-                        <img class="default-img" src="public/assets/images/product/product-3.jpg" alt="">
-                        <img class="hover-img" src="public/assets/images/product/product-3-2.jpg" alt="">
+                    <a href="index.php?redirect=chitietsp&id=<?=$row['id_san_pham']?>">
+                        <img class="default-img" src="public/image/<?=$row['anh_san_pham']?>" alt="">
+                        <!-- <img class="hover-img" src="public/assets/images/product/product-3-2.jpg" alt=""> -->
                     </a>
                     <div class="product-action product-action-position-1">
                         <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="fa fa-eye"></i><span>Quick Shop</span></a>
                         <a title="Add to Wishlist" href="#"><i class="fa fa-heart"></i><span>Add to Wishlist</span></a>
-                        <a class="icon-blod" title="Add to Compare" href="#"><i class="dlicon arrows-4_compare"></i><span>Add to Compare</span></a>
                         <a title="Add to Cart" href="#"><i class="fa fa-shopping-cart"></i><span>Add to Cart</span></a>
                     </div>
                 </div>
                 <div class="product-content-2 title-font-width-400 text-center">
-                    <h3><a href="index.php?redirect=chitietsp&id_san_pham=">Fashion sneaker winter</a></h3>
+                    <h3><a href="index.php?redirect=chitietsp&id="><?=$row['ten_san_pham']?></a></h3>
                     <div class="product-price">
-                        <span class="new-price">$28.00</span>
+                        <span class="new-price text-danger"><?=number_format($row['gia_tien'],0)?> <sup>vnđ</sup></span>
                     </div>
                 </div>
             </div>
-            <div class="product-wrap">
-                <div class="product-img default-overlay mb-25">
-                    <a href="index.php?redirect=chitietsp&id_san_pham=">
-                        <img class="default-img" src="public/assets/images/product/product-4.jpg" alt="">
-                        <img class="hover-img" src="public/assets/images/product/product-4-2.jpg" alt="">
-                    </a>
-                    <div class="product-action product-action-position-1">
-                        <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="fa fa-eye"></i><span>Quick Shop</span></a>
-                        <a title="Add to Wishlist" href="#"><i class="fa fa-heart"></i><span>Add to Wishlist</span></a>
-                        <a class="icon-blod" title="Add to Compare" href="#"><i class="dlicon arrows-4_compare"></i><span>Add to Compare</span></a>
-                        <a title="Add to Cart" href="#"><i class="fa fa-shopping-cart"></i><span>Add to Cart</span></a>
-                    </div>
-                </div>
-                <div class="product-content-2 title-font-width-400 text-center">
-                    <h3><a href="index.php?redirect=chitietsp&id_san_pham=">News strappy sandals</a></h3>
-                    <div class="product-price">
-                        <span class="new-price">$26.00</span>
-                    </div>
-                </div>
-            </div>
-            <div class="product-wrap">
-                <div class="product-img default-overlay mb-25">
-                    <a href="index.php?redirect=chitietsp&id_san_pham=">
-                        <img class="default-img" src="public/assets/images/product/product-1.jpg" alt="">
-                        <img class="hover-img" src="public/assets/images/product/product-1-2.jpg" alt="">
-                    </a>
-                    <div class="product-action product-action-position-1">
-                        <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="fa fa-eye"></i><span>Quick Shop</span></a>
-                        <a title="Add to Wishlist" href="#"><i class="fa fa-heart"></i><span>Add to Wishlist</span></a>
-                        <a class="icon-blod" title="Add to Compare" href="#"><i class="dlicon arrows-4_compare"></i><span>Add to Compare</span></a>
-                        <a title="Add to Cart" href="#"><i class="fa fa-shopping-cart"></i><span>Add to Cart</span></a>
-                    </div>
-                </div>
-                <div class="product-content-2 title-font-width-400 text-center">
-                    <h3><a href="index.php?redirect=chitietsp&id_san_pham=">Check bermuda shorts</a></h3>
-                    <div class="product-price">
-                        <span class="new-price">$39.00</span>
-                    </div>
-                </div>
-            </div>
-            <div class="product-wrap">
-                <div class="product-img default-overlay mb-25">
-                    <a href="index.php?redirect=chitietsp&id_san_pham=">
-                        <img class="default-img" src="public/assets/images/product/product-5.jpg" alt="">
-                        <img class="hover-img" src="public/assets/images/product/product-5-2.jpg" alt="">
-                    </a>
-                    <div class="product-action product-action-position-1">
-                        <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="fa fa-eye"></i><span>Quick Shop</span></a>
-                        <a title="Add to Wishlist" href="#"><i class="fa fa-heart"></i><span>Add to Wishlist</span></a>
-                        <a class="icon-blod" title="Add to Compare" href="#"><i class="dlicon arrows-4_compare"></i><span>Add to Compare</span></a>
-                        <a title="Add to Cart" href="#"><i class="fa fa-shopping-cart"></i><span>Add to Cart</span></a>
-                    </div>
-                </div>
-                <div class="product-content-2 title-font-width-400 text-center">
-                    <h3><a href="index.php?redirect=chitietsp&id_san_pham=">Down puffer coat collar</a></h3>
-                    <div class="product-price">
-                        <span class="new-price">$55.00</span>
-                    </div>
-                </div>
-            </div>
-            <div class="product-wrap">
-                <div class="product-img default-overlay mb-25">
-                    <a href="index.php?redirect=chitietsp&id_san_pham=">
-                        <img class="default-img" src="public/assets/images/product/product-6.jpg" alt="">
-                        <img class="hover-img" src="public/assets/images/product/product-6-2.jpg" alt="">
-                    </a>
-                    <div class="product-action product-action-position-1">
-                        <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="fa fa-eye"></i><span>Quick Shop</span></a>
-                        <a title="Add to Wishlist" href="#"><i class="fa fa-heart"></i><span>Add to Wishlist</span></a>
-                        <a class="icon-blod" title="Add to Compare" href="#"><i class="dlicon arrows-4_compare"></i><span>Add to Compare</span></a>
-                        <a title="Add to Cart" href="#"><i class="fa fa-shopping-cart"></i><span>Add to Cart</span></a>
-                    </div>
-                </div>
-                <div class="product-content-2 title-font-width-400 text-center">
-                    <h3><a href="index.php?redirect=chitietsp&id_san_pham=">Bejewelled velvet sandals</a></h3>
-                    <div class="product-price">
-                        <span class="new-price">$49.00</span>
-                    </div>
-                </div>
-            </div>
-            <div class="product-wrap">
-                <div class="product-img default-overlay mb-25">
-                    <a href="index.php?redirect=chitietsp&id_san_pham=">
-                        <img class="default-img" src="public/assets/images/product/product-4.jpg" alt="">
-                        <img class="hover-img" src="public/assets/images/product/product-4-2.jpg" alt="">
-                    </a>
-                    <div class="product-action product-action-position-1">
-                        <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="fa fa-eye"></i><span>Quick Shop</span></a>
-                        <a title="Add to Wishlist" href="#"><i class="fa fa-heart"></i><span>Add to Wishlist</span></a>
-                        <a class="icon-blod" title="Add to Compare" href="#"><i class="dlicon arrows-4_compare"></i><span>Add to Compare</span></a>
-                        <a title="Add to Cart" href="#"><i class="fa fa-shopping-cart"></i><span>Add to Cart</span></a>
-                    </div>
-                </div>
-                <div class="product-content-2 title-font-width-400 text-center">
-                    <h3><a href="index.php?redirect=chitietsp&id_san_pham=">News strappy sandals</a></h3>
-                    <div class="product-price">
-                        <span class="new-price">$26.00</span>
-                    </div>
-                </div>
-            </div>
+            <?php endforeach ?>
         </div>
     </div>
 </div>

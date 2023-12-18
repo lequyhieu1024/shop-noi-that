@@ -2,7 +2,7 @@
     switch($act){
         case 'listsp':
             $listsp = listsp();
-            include "page/sanpham/listsp.php";
+            include "page/product/listsp.php";
             break;
             
         case 'chitietsp':
@@ -12,7 +12,7 @@
             $listth = listth();
             $load_one_sp = load_one_sp($id_san_pham);
             $load_all_bien_the = load_all_bien_the($id_san_pham);
-            include "page/sanpham/chitietsp.php";
+            include "page/product/chitietsp.php";
             break;
 
         case 'addsp':
@@ -40,7 +40,7 @@
                 $gia_tien,$so_luong,$kich_thuoc,$id_danh_muc,$id_thuong_hieu,$show_san_pham);
                 $alert = "Thêm sản phẩm thành công";
             }
-            include "page/sanpham/addsp.php";
+            include "page/product/addsp.php";
             break;
 
         case 'editsp':
@@ -72,7 +72,7 @@
                 echo '<script>alert("Cập nhật thành công")</script>';
                 echo '<script>window.location.href = "index.php?act=listsp"</script>';
             }
-            include "page/sanpham/editsp.php";
+            include "page/product/editsp.php";
             break;
 
         case 'deletesp':

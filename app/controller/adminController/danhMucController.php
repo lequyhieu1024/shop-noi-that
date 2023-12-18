@@ -2,7 +2,7 @@
     switch($act){
         case 'listdm':
             $listdm = listdm();
-            include "page/danhmuc/listdm.php";
+            include "page/category/listdm.php";
             break;
 
         case 'adddm':
@@ -12,7 +12,7 @@
                 adddm($ten_danh_muc,$show_danh_muc);
                 $alert = "Thêm danh mục thành công !";
             }
-            include "page/danhmuc/adddm.php";
+            include "page/category/adddm.php";
             break;
 
         case 'editdm':
@@ -25,7 +25,7 @@
                 echo '<script>alert("Cập nhật thành công")</script>';
                 echo '<script>window.location.href = "index.php?act=listdm"</script>';
             }
-            include "page/danhmuc/editdm.php";
+            include "page/category/editdm.php";
             break;
 
         case 'deletedm':

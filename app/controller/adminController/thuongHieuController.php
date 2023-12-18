@@ -2,7 +2,7 @@
     switch($act){
         case 'listth':
             $listth = listth();
-            include "page/thuonghieu/listth.php";
+            include "page/brand/listth.php";
             break;
 
         case 'addth':
@@ -20,7 +20,7 @@
                 addth($ten_thuong_hieu,$anh_thuong_hieu,$show_thuong_hieu);
                 $alert = "Thêm thương hiệu thành công !";
             }
-            include "page/thuonghieu/addth.php";
+            include "page/brand/addth.php";
             break;
 
         case 'editth':
@@ -41,7 +41,7 @@
                 echo '<script>alert("Cập nhật thành công")</script>';
                 echo '<script>window.location.href = "index.php?act=listth"</script>';
             }
-            include "page/thuonghieu/editth.php";
+            include "page/brand/editth.php";
             break;
 
         case 'deleteth':

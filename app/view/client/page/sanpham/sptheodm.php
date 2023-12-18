@@ -1,10 +1,26 @@
-<hr>
-<div class="product-area section-padding-1 pt-100 pb-125">
+<?php foreach ($all_pro_of_cate as $rows) : endforeach ?>
+<div class="breadcrumb-area section-padding-1 bg-gray breadcrumb-ptb-1">
     <div class="container-fluid">
-        <div class="section-title-12 text-center mb-65">
+        <div class="breadcrumb-content text-center">
+            <div class="breadcrumb-title">
+                <h2><?=$rows['ten_danh_muc']?></h2>
+            </div>
+            <ul>
+                <li>
+                    <a href="index.php">Trang chủ</a>
+                </li>
+                <li><span> &gt; </span></li>
+                <li class="active"><?=$rows['ten_danh_muc']?></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="product-area section-padding-1 pt-20 pb-125">
+    <div class="container-fluid">
+        <!-- <div class="section-title-12 text-center mb-65">
             <h2>Sản phẩm trong danh mục</h2>
             <p>Những sản phẩm được nhiều người xem nhất</p>
-        </div>
+        </div> -->
         <div class="row">
             <?php foreach ($all_pro_of_cate as $rows) : ?>
                 <div class="custom-col-5">

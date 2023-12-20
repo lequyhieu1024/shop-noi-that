@@ -58,8 +58,8 @@ foreach ($load_one_sp as $rows) :
                 <label class="input-group-text">Show sản phẩm</label>
             </div>
             <select class="custom-select" required name="show_san_pham" id="inputGroupSelect01">
-                <option value="1">Hiện</option>
-                <option value="0">Ẩn</option>
+                <option value="1" <?= ($show_san_pham == 1) ? "selected" : "" ?>>Hiện</option>
+                <option value="0" <?= ($show_san_pham == 0) ? "selected" : "" ?>>Ẩn</option>
             </select>
         </div>
         <input type="submit" required name="editsp" class="btn btn-primary" value="Cập nhật">

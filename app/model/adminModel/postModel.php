@@ -13,3 +13,24 @@
         $result = pdo_query($sql);
         return $result;
     }
+    function load_one_post($id_bai_viet){
+        $sql = "SELECT * FROM bai_viet WHERE id_bai_viet = $id_bai_viet";
+        $result = pdo_query($sql);
+        return $result;
+    }
+    function editpost($id_bai_viet,$title_bai_viet,$anh_bai_viet,$noi_dung_bai_viet,$id_thuong_hieu,$id_danh_muc,$id_san_pham,$show_bai_viet){
+        if($anh_bai_viet != ""){
+            $sql = "UPDATE bai_viet SET title_bai_viet='$title_bai_viet',
+            anh_bai_viet='$anh_bai_viet',noi_dung_bai_viet='$noi_dung_bai_viet',
+            id_thuong_hieu='$id_thuong_hieu',id_danh_muc='$id_danh_muc',
+            id_san_pham='$id_san_pham',show_bai_viet='$show_bai_viet'
+            WHERE id_bai_viet = $id_bai_viet";
+        }else{
+            $sql = "UPDATE bai_viet SET title_bai_viet='$title_bai_viet',
+            noi_dung_bai_viet='$noi_dung_bai_viet',
+            id_thuong_hieu='$id_thuong_hieu',id_danh_muc='$id_danh_muc',
+            id_san_pham='$id_san_pham',show_bai_viet='$show_bai_viet'
+            WHERE id_bai_viet = $id_bai_viet";
+        }
+        pdo_execute($sql);
+    }

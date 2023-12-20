@@ -17,7 +17,7 @@
 </div>
 <?php foreach ($detail_pro as $row) : endforeach ?>
 
-<div class="product-details-area section-padding-1 pb-90">
+<form method="post" class="product-details-area section-padding-1 pb-90">
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-6">
@@ -166,7 +166,7 @@
             </div>
         </div>
     </div>
-</div>
+</form>
 <div class="description-review-area section-padding-7 pb-100">
     <div class="container-fluid">
         <div class="row">

@@ -1,0 +1,15 @@
+{
+    "name": "admin/shop_noi_that",
+    "autoload": {
+        "psr-4": {
+            "app\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "lequyhieu1024",
+            "email": "lequyhieu1024@gmail.com"
+        }
+    ],
+    "require": {}
+}
